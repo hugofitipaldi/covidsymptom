@@ -1,11 +1,8 @@
-# covidsymptom
+# covidsymptom <a href='https://github.com/csss-resultat/covidsymptom'><img src='man/figures/hex.png' width="15%" align="right"  /></a>
 
 <!-- badges: start --->
 
 <!-- badges: end -->
-<center>
-<img src="man/figures/covid_logo.png" width="60%" />
-</center>
 
 The covidsymptom R package provides an easy way to import open data from the COVID Symptom Study-Sweden. The package includes three datasets:
 
@@ -27,9 +24,7 @@ devtools::install_github("csss-resultat/covidsymptom")
 
 A supporting dashboard is available [here](https://csss-resultat.shinyapps.io/csss_dashboard/)
 
-<center>
 <img src="man/figures/dashboard.png" width="100%" />
-</center>
 
 
 ## About COVID Symptom Study - Sweden
