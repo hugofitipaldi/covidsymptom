@@ -90,7 +90,7 @@ covidsymptom::county_estimates %>%
       scale_x_date(date_breaks = "30 days") +
       theme_minimal() + 
       theme(axis.text.x = element_text(angle = 45, hjust = 1), panel.grid.minor.x = element_blank(),
-            legend.position = "none", plot.title = element_text(hjust = 0.5), strip.text = element_text(size=18)) + 
+            legend.position = "none", plot.title = element_text(hjust = 0.5)) + 
       # Add the confidence intervals and make them slightly transparent
       geom_ribbon(aes(ymin = Low_CI, ymax = High_CI), color = "transparent", fill = "#a60f61", alpha = 0.09) +
       facet_wrap(. ~ Lan) 
