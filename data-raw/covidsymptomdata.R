@@ -1,8 +1,8 @@
 # data-raw/mydataset.R
 # Data import and processing pipeline
 
-national_estimates <- rio::import("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/lan_senaste.csv")
-county_estimates <- rio::import("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/nationella_senaste.csv")
+national_estimates <- rio::import("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/nationella_senaste.csv")
+county_estimates <- rio::import("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/lan_senaste.csv")
 postcode_estimates <- rio::import("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/siffror_senaste.csv")
 
 
