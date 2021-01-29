@@ -1,4 +1,4 @@
-# covidsymptom <a href='https://github.com/csss-resultat/covidsymptom'><img src='man/figures/hex.png' width="15%" align="right"  /></a>
+# covidsymptom <a href='https://github.com/csss-resultat/covidsymptom'><img src='man/figures/hex2.png' width="15%" align="right"  /></a>
 
 <!-- badges: start --->
 
@@ -13,11 +13,11 @@ The covidsymptom R package provides an easy way to import open data from the COV
 
 ## Installation
 
-Install the Github version:
+Development version of the package can be installed from Github with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("csss-resultat/covidsymptom")
+install.packages("remotes")
+remotes::install_github("csss-resultat/covidsymptom")
 ```
 
 ## Dashboard
