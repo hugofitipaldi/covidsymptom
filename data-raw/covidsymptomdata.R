@@ -10,6 +10,7 @@ postcode_estimates <- rio::import("https://raw.githubusercontent.com/csss-result
 national_estimates$Datum <- as.Date(national_estimates$Datum, format = "%Y-%m-%d")
 county_estimates$Datum <- as.Date(county_estimates$Datum, format = "%Y-%m-%d")
 postcode_estimates$Datum <- as.Date(postcode_estimates$Datum, format = "%Y-%m-%d")
+postcode_estimates$Postnummer <- as.character(postcode_estimates$Postnummer)
 
 # This should be the last line.
 # Note that names are unquoted.

@@ -91,10 +91,40 @@ covidsymptom::county_estimates %>%
       theme_minimal() + 
       theme(axis.text.x = element_text(angle = 45, hjust = 1), panel.grid.minor.x = element_blank(),
             legend.position = "none", plot.title = element_text(hjust = 0.5)) + 
-      # Add the confidence intervals and make them slightly transparent
       geom_ribbon(aes(ymin = Low_CI, ymax = High_CI), color = "transparent", fill = "#a60f61", alpha = 0.09) +
       facet_wrap(. ~ Lan) 
 
+
+```
+
+- 2-digit postcodes' estimates
+
+COVID Symptom Study - Sweden provides also predictions at <a href = "https://csss-resultat.github.io/sverige2siffror/">2-digit postcode levels</a>. 
+
+```{r warning=FALSE, message=FALSE}
+library(ggplot2)
+library(dplyr)
+library(lubridate)
+library(gt)
+
+stockholm_codes <- c('11', '12', '13', '14', '15', '16', '17', '18', '19', '76')
+
+covidsymptom::postcode_estimates %>%
+  filter(Postnummer %in% stockholm_codes & Datum == as.Date("2021-01-30")) %>%
+  gt(.)
+
+covidsymptom::postcode_estimates %>%
+  filter(Postnummer %in% stockholm_codes) %>%
+  ggplot(aes(x = Datum, y = Uppskattning, color = Postnummer)) +
+  geom_line() +
+  geom_point(size = 0.5) +
+  labs(x = "Datum", y = "Uppskattad förekomst", title = "% Uppskattad förekomst av symtomatisk covid-19", subtitle = "") +
+  scale_x_date(date_breaks = "60 days") +
+  theme_minimal() + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1), panel.grid.minor.x = element_blank(),
+        legend.position = "none", plot.title = element_text(hjust = 0.5)) + 
+  geom_ribbon(aes(ymin = Low_CI, ymax = High_CI), color = "transparent", fill = "#a60f61", alpha = 0.09) +
+  facet_wrap(. ~ Postnummer)   
 
 ```
 
