@@ -107,13 +107,11 @@ COVID Symptom Study - Sweden provides also predictions at
 <a href = "https://csss-resultat.github.io/sverige2siffror/">2-digit
 postcode levels</a>.
 
-<!--html_preserve-->
-
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#duxnamiejw .gt_table {
+#hggceufoow .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -138,7 +136,7 @@ postcode levels</a>.
   border-left-color: #D3D3D3;
 }
 
-#duxnamiejw .gt_heading {
+#hggceufoow .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -150,7 +148,7 @@ postcode levels</a>.
   border-right-color: #D3D3D3;
 }
 
-#duxnamiejw .gt_title {
+#hggceufoow .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -160,7 +158,7 @@ postcode levels</a>.
   border-bottom-width: 0;
 }
 
-#duxnamiejw .gt_subtitle {
+#hggceufoow .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -170,13 +168,13 @@ postcode levels</a>.
   border-top-width: 0;
 }
 
-#duxnamiejw .gt_bottom_border {
+#hggceufoow .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#duxnamiejw .gt_col_headings {
+#hggceufoow .gt_col_headings {
   border-top-style: solid;
   border-top-width: 3px;
   border-top-color: transparent;
@@ -191,7 +189,7 @@ postcode levels</a>.
   border-right-color: #D3D3D3;
 }
 
-#duxnamiejw .gt_col_heading {
+#hggceufoow .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -211,7 +209,7 @@ postcode levels</a>.
   overflow-x: hidden;
 }
 
-#duxnamiejw .gt_column_spanner_outer {
+#hggceufoow .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -223,15 +221,15 @@ postcode levels</a>.
   padding-right: 4px;
 }
 
-#duxnamiejw .gt_column_spanner_outer:first-child {
+#hggceufoow .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#duxnamiejw .gt_column_spanner_outer:last-child {
+#hggceufoow .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#duxnamiejw .gt_column_spanner {
+#hggceufoow .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -243,7 +241,7 @@ postcode levels</a>.
   width: 100%;
 }
 
-#duxnamiejw .gt_group_heading {
+#hggceufoow .gt_group_heading {
   padding: 8px;
   color: #FFFFFF;
   background-color: grey;
@@ -265,7 +263,7 @@ postcode levels</a>.
   vertical-align: middle;
 }
 
-#duxnamiejw .gt_empty_group_heading {
+#hggceufoow .gt_empty_group_heading {
   padding: 0.5px;
   color: #FFFFFF;
   background-color: grey;
@@ -280,15 +278,15 @@ postcode levels</a>.
   vertical-align: middle;
 }
 
-#duxnamiejw .gt_from_md > :first-child {
+#hggceufoow .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#duxnamiejw .gt_from_md > :last-child {
+#hggceufoow .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#duxnamiejw .gt_row {
+#hggceufoow .gt_row {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -307,7 +305,7 @@ postcode levels</a>.
   overflow-x: hidden;
 }
 
-#duxnamiejw .gt_stub {
+#hggceufoow .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -319,7 +317,7 @@ postcode levels</a>.
   padding-left: 12px;
 }
 
-#duxnamiejw .gt_summary_row {
+#hggceufoow .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -329,7 +327,7 @@ postcode levels</a>.
   padding-right: 5px;
 }
 
-#duxnamiejw .gt_first_summary_row {
+#hggceufoow .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -339,7 +337,7 @@ postcode levels</a>.
   border-top-color: #D3D3D3;
 }
 
-#duxnamiejw .gt_grand_summary_row {
+#hggceufoow .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -349,7 +347,7 @@ postcode levels</a>.
   padding-right: 5px;
 }
 
-#duxnamiejw .gt_first_grand_summary_row {
+#hggceufoow .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -359,11 +357,11 @@ postcode levels</a>.
   border-top-color: #D3D3D3;
 }
 
-#duxnamiejw .gt_striped {
+#hggceufoow .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#duxnamiejw .gt_table_body {
+#hggceufoow .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -372,7 +370,7 @@ postcode levels</a>.
   border-bottom-color: #D3D3D3;
 }
 
-#duxnamiejw .gt_footnotes {
+#hggceufoow .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -386,13 +384,13 @@ postcode levels</a>.
   border-right-color: #D3D3D3;
 }
 
-#duxnamiejw .gt_footnote {
+#hggceufoow .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#duxnamiejw .gt_sourcenotes {
+#hggceufoow .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -406,516 +404,149 @@ postcode levels</a>.
   border-right-color: #D3D3D3;
 }
 
-#duxnamiejw .gt_sourcenote {
+#hggceufoow .gt_sourcenote {
   font-size: 12px;
   padding: 4px;
 }
 
-#duxnamiejw .gt_left {
+#hggceufoow .gt_left {
   text-align: left;
 }
 
-#duxnamiejw .gt_center {
+#hggceufoow .gt_center {
   text-align: center;
 }
 
-#duxnamiejw .gt_right {
+#hggceufoow .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#duxnamiejw .gt_font_normal {
+#hggceufoow .gt_font_normal {
   font-weight: normal;
 }
 
-#duxnamiejw .gt_font_bold {
+#hggceufoow .gt_font_bold {
   font-weight: bold;
 }
 
-#duxnamiejw .gt_font_italic {
+#hggceufoow .gt_font_italic {
   font-style: italic;
 }
 
-#duxnamiejw .gt_super {
+#hggceufoow .gt_super {
   font-size: 65%;
 }
 
-#duxnamiejw .gt_footnote_marks {
+#hggceufoow .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-
-<div id="duxnamiejw" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-
-<table class="gt_table" style="table-layout: fixed;">
-
-<colgroup>
-
-<col/>
-
-<col style="width:95px;"/>
-
-<col/>
-
-<col/>
-
-<col/>
-
-<col/>
-
-</colgroup>
-
-<thead class="gt_header">
-
-<tr>
-
-<th colspan="6" class="gt_heading gt_title gt_font_normal" style>
-
-<strong>Predicted number of cases as % of the population</strong>
-
-</th>
-
-</tr>
-
-<tr>
-
-<th colspan="6" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style>
-
-Stockholm’s 2-digit regions
-
-</th>
-
-</tr>
-
-</thead>
-
-<thead class="gt_col_headings">
-
-<tr>
-
-<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold;">
-
-Postnummer
-
-</th>
-
-<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold;">
-
-Datum
-
-</th>
-
-<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold;">
-
-Uppskattning
-
-</th>
-
-<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold;">
-
-Low\_CI
-
-</th>
-
-<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold;">
-
-High\_CI
-
-</th>
-
-<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold;">
-
-Ort
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody class="gt_table_body">
-
-<tr>
-
-<td class="gt_row gt_center">
-
-19
-
-</td>
-
-<td class="gt_row gt_center">
-
-2021-01-31
-
-</td>
-
-<td class="gt_row gt_center" style="background-color: #5E0B21; color: #FFFFFF;">
-
-0.70
-
-</td>
-
-<td class="gt_row gt_center">
-
-0.10
-
-</td>
-
-<td class="gt_row gt_center">
-
-3.06
-
-</td>
-
-<td class="gt_row gt_center">
-
-Arlandastad/ Bro/ Kungsängen/ Märsta/ Rosersberg/ Sigtuna/ Sollentuna/
-Steningehöjden/ Stockholm/ Upplands Väsby
-
-</td>
-
-</tr>
-
-<tr>
-
-<td class="gt_row gt_center">
-
-18
-
-</td>
-
-<td class="gt_row gt_center">
-
-2021-01-31
-
-</td>
-
-<td class="gt_row gt_center" style="background-color: #96565E; color: #FFFFFF;">
-
-0.58
-
-</td>
-
-<td class="gt_row gt_center">
-
-0.14
-
-</td>
-
-<td class="gt_row gt_center">
-
-1.84
-
-</td>
-
-<td class="gt_row gt_center">
-
-Åkersberga/ Brottby/ Danderyd/ Djursholm/ Enebyberg/ Husarö/ Lidingö/
-Ljusterö/ Österskär/ Stockholm/ Stocksund/ Täby/ Vallentuna/ Vaxholm
-
-</td>
-
-</tr>
-
-<tr>
-
-<td class="gt_row gt_center">
-
-14
-
-</td>
-
-<td class="gt_row gt_center">
-
-2021-01-31
-
-</td>
-
-<td class="gt_row gt_center" style="background-color: #A4686F; color: #FFFFFF;">
-
-0.55
-
-</td>
-
-<td class="gt_row gt_center">
-
-0.08
-
-</td>
-
-<td class="gt_row gt_center">
-
-2.43
-
-</td>
-
-<td class="gt_row gt_center">
-
-Grödinge/ Huddinge/ Kungens Kurva/ Landfjärden/ Muskö/ Norsborg/
-Nynäshamn/ Ösmo/ Rönninge/ Segeltorp/ Segersäng/ Skogås/ Sorunda/
-Stockholm/ Stora Vika/ Trångsund/ Tullinge/ Tumba/ Uttran/ Vårby
-
-</td>
-
-</tr>
-
-<tr>
-
-<td class="gt_row gt_center">
-
-15
-
-</td>
-
-<td class="gt_row gt_center">
-
-2021-01-31
-
-</td>
-
-<td class="gt_row gt_center" style="background-color: #B68086; color: #000000;">
-
-0.51
-
-</td>
-
-<td class="gt_row gt_center">
-
-0.00
-
-</td>
-
-<td class="gt_row gt_center">
-
-7.07
-
-</td>
-
-<td class="gt_row gt_center">
-
-Enhörna/ Hölö/ Järna/ Mölnbo/ Mörkö/ Nykvarn/ Södertälje
-
-</td>
-
-</tr>
-
-<tr>
-
-<td class="gt_row gt_center">
-
-13
-
-</td>
-
-<td class="gt_row gt_center">
-
-2021-01-31
-
-</td>
-
-<td class="gt_row gt_center" style="background-color: #BF8C91; color: #000000;">
-
-0.49
-
-</td>
-
-<td class="gt_row gt_center">
-
-0.09
-
-</td>
-
-<td class="gt_row gt_center">
-
-1.89
-
-</td>
-
-<td class="gt_row gt_center">
-
-Älta/ Årsta Havsbad/ Brandbergen/ Dalarö/ Djurhamn/ Gällnöby/ Gålö/
-Gränö/ Gustavsberg/ Handen/ Haninge/ Harö/ Hårsfjärden/ Ingarö/
-Ingmarsö/ Jordbro/ Möja/ Nacka/ Nacka Strand/ Nämdö/ Norra Sorunda/
-Norrby/ Ornö/ Österhaninge/ Runmarö/ Saltsjö-Boo/ Saltsjö-Duvnäs/
-Saltsjöbaden/ Sandhamn/ Skälvik/ Söderby/ Sollenkroka Ö/ Stavsnäs/
-Stavsudda/ Stockholm/ Tungelsta/ Tynningö/ Tyresö/ Utö/ Värmdö/
-Västerhaninge/ Vega/ Vendelsö
-
-</td>
-
-</tr>
-
-<tr>
-
-<td class="gt_row gt_center">
-
-11
-
-</td>
-
-<td class="gt_row gt_center">
-
-2021-01-31
-
-</td>
-
-<td class="gt_row gt_center" style="background-color: #D6ABB0; color: #000000;">
-
-0.44
-
-</td>
-
-<td class="gt_row gt_center">
-
-0.16
-
-</td>
-
-<td class="gt_row gt_center">
-
-1.14
-
-</td>
-
-<td class="gt_row gt_center">
-
-Stockholm
-
-</td>
-
-</tr>
-
-<tr>
-
-<td class="gt_row gt_center">
-
-17
-
-</td>
-
-<td class="gt_row gt_center">
-
-2021-01-31
-
-</td>
-
-<td class="gt_row gt_center" style="background-color: #DEB7BC; color: #000000;">
-
-0.42
-
-</td>
-
-<td class="gt_row gt_center">
-
-0.05
-
-</td>
-
-<td class="gt_row gt_center">
-
-2.08
-
-</td>
-
-<td class="gt_row gt_center">
-
-Adelsö/ Drottningholm/ Ekerö/ Färentuna/ Järfälla/ Munsö/ Skå/ Solna/
-Stenhamra/ Stockholm/ Sundbyberg/ Svartsjö
-
-</td>
-
-</tr>
-
-<tr>
-
-<td class="gt_row gt_center">
-
-16
-
-</td>
-
-<td class="gt_row gt_center">
-
-2021-01-31
-
-</td>
-
-<td class="gt_row gt_center" style="background-color: #F0D1D5; color: #000000;">
-
-0.38
-
-</td>
-
-<td class="gt_row gt_center">
-
-0.05
-
-</td>
-
-<td class="gt_row gt_center">
-
-1.76
-
-</td>
-
-<td class="gt_row gt_center">
-
-Bromma/ Hässelby/ Kista/ Solna/ Spånga/ Stockholm/ Vällingby
-
-</td>
-
-</tr>
-
-<tr>
-
-<td class="gt_row gt_center">
-
-12
-
-</td>
-
-<td class="gt_row gt_center">
-
-2021-01-31
-
-</td>
-
-<td class="gt_row gt_center" style="background-color: #F9DEE2; color: #000000;">
-
-0.36
-
-</td>
-
-<td class="gt_row gt_center">
-
-0.08
-
-</td>
-
-<td class="gt_row gt_center">
-
-1.21
-
-</td>
-
-<td class="gt_row gt_center">
-
-Älvsjö/ Årsta/ Bagarmossen/ Bandhagen/ Enskede/ Enskede Gård/
-Enskededalen/ Farsta/ Hägersten/ Johanneshov/ Skärholmen/ Skarpnäck/
-Sköndal/ Stockholm/ Stockholm-Globen
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-</div>
-
-<!--/html_preserve-->
+<div id="hggceufoow" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table" style="table-layout: fixed;">
+  <colgroup>
+    <col/>
+    <col style="width:95px;"/>
+    <col/>
+    <col/>
+    <col/>
+    <col/>
+  </colgroup>
+  <thead class="gt_header">
+    <tr>
+      <th colspan="6" class="gt_heading gt_title gt_font_normal" style><strong>Predicted number of cases as % of the population</strong></th>
+    </tr>
+    <tr>
+      <th colspan="6" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style>Stockholm's 2-digit regions</th>
+    </tr>
+  </thead>
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold;">Postnummer</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold;">Datum</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold;">Uppskattning</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold;">Low_CI</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold;">High_CI</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold;">Ort</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr>
+      <td class="gt_row gt_center">19</td>
+      <td class="gt_row gt_center">2021-01-31</td>
+      <td class="gt_row gt_center" style="background-color: #5E0B21; color: #FFFFFF;">0.70</td>
+      <td class="gt_row gt_center">0.10</td>
+      <td class="gt_row gt_center">3.06</td>
+      <td class="gt_row gt_center">Arlandastad/ Bro/ Kungsängen/ Märsta/ Rosersberg/ Sigtuna/ Sollentuna/ Steningehöjden/ Stockholm/ Upplands Väsby</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">18</td>
+      <td class="gt_row gt_center">2021-01-31</td>
+      <td class="gt_row gt_center" style="background-color: #96565E; color: #FFFFFF;">0.58</td>
+      <td class="gt_row gt_center">0.14</td>
+      <td class="gt_row gt_center">1.84</td>
+      <td class="gt_row gt_center">Åkersberga/ Brottby/ Danderyd/ Djursholm/ Enebyberg/ Husarö/ Lidingö/ Ljusterö/ Österskär/ Stockholm/ Stocksund/ Täby/ Vallentuna/ Vaxholm</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">14</td>
+      <td class="gt_row gt_center">2021-01-31</td>
+      <td class="gt_row gt_center" style="background-color: #A4686F; color: #FFFFFF;">0.55</td>
+      <td class="gt_row gt_center">0.08</td>
+      <td class="gt_row gt_center">2.43</td>
+      <td class="gt_row gt_center">Grödinge/ Huddinge/ Kungens Kurva/ Landfjärden/ Muskö/ Norsborg/ Nynäshamn/ Ösmo/ Rönninge/ Segeltorp/ Segersäng/ Skogås/ Sorunda/ Stockholm/ Stora Vika/ Trångsund/ Tullinge/ Tumba/ Uttran/ Vårby</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">15</td>
+      <td class="gt_row gt_center">2021-01-31</td>
+      <td class="gt_row gt_center" style="background-color: #B68086; color: #000000;">0.51</td>
+      <td class="gt_row gt_center">0.00</td>
+      <td class="gt_row gt_center">7.07</td>
+      <td class="gt_row gt_center">Enhörna/ Hölö/ Järna/ Mölnbo/ Mörkö/ Nykvarn/ Södertälje</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">13</td>
+      <td class="gt_row gt_center">2021-01-31</td>
+      <td class="gt_row gt_center" style="background-color: #BF8C91; color: #000000;">0.49</td>
+      <td class="gt_row gt_center">0.09</td>
+      <td class="gt_row gt_center">1.89</td>
+      <td class="gt_row gt_center">Älta/ Årsta Havsbad/ Brandbergen/ Dalarö/ Djurhamn/ Gällnöby/ Gålö/ Gränö/ Gustavsberg/ Handen/ Haninge/ Harö/ Hårsfjärden/ Ingarö/ Ingmarsö/ Jordbro/ Möja/ Nacka/ Nacka Strand/ Nämdö/ Norra Sorunda/ Norrby/ Ornö/ Österhaninge/ Runmarö/ Saltsjö-Boo/ Saltsjö-Duvnäs/ Saltsjöbaden/ Sandhamn/ Skälvik/ Söderby/ Sollenkroka Ö/ Stavsnäs/ Stavsudda/ Stockholm/ Tungelsta/ Tynningö/ Tyresö/ Utö/ Värmdö/ Västerhaninge/ Vega/ Vendelsö</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">11</td>
+      <td class="gt_row gt_center">2021-01-31</td>
+      <td class="gt_row gt_center" style="background-color: #D6ABB0; color: #000000;">0.44</td>
+      <td class="gt_row gt_center">0.16</td>
+      <td class="gt_row gt_center">1.14</td>
+      <td class="gt_row gt_center">Stockholm</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">17</td>
+      <td class="gt_row gt_center">2021-01-31</td>
+      <td class="gt_row gt_center" style="background-color: #DEB7BC; color: #000000;">0.42</td>
+      <td class="gt_row gt_center">0.05</td>
+      <td class="gt_row gt_center">2.08</td>
+      <td class="gt_row gt_center">Adelsö/ Drottningholm/ Ekerö/ Färentuna/ Järfälla/ Munsö/ Skå/ Solna/ Stenhamra/ Stockholm/ Sundbyberg/ Svartsjö</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">16</td>
+      <td class="gt_row gt_center">2021-01-31</td>
+      <td class="gt_row gt_center" style="background-color: #F0D1D5; color: #000000;">0.38</td>
+      <td class="gt_row gt_center">0.05</td>
+      <td class="gt_row gt_center">1.76</td>
+      <td class="gt_row gt_center">Bromma/ Hässelby/ Kista/ Solna/ Spånga/ Stockholm/ Vällingby</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">12</td>
+      <td class="gt_row gt_center">2021-01-31</td>
+      <td class="gt_row gt_center" style="background-color: #F9DEE2; color: #000000;">0.36</td>
+      <td class="gt_row gt_center">0.08</td>
+      <td class="gt_row gt_center">1.21</td>
+      <td class="gt_row gt_center">Älvsjö/ Årsta/ Bagarmossen/ Bandhagen/ Enskede/ Enskede Gård/ Enskededalen/ Farsta/ Hägersten/ Johanneshov/ Skärholmen/ Skarpnäck/ Sköndal/ Stockholm/ Stockholm-Globen</td>
+    </tr>
+  </tbody>
+  
+  
+</table></div>
 
 ``` r
 library(ggplot2)
