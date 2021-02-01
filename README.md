@@ -111,7 +111,7 @@ postcode levels</a>.
 library(ggplot2)
 library(dplyr)
 library(lubridate)
-library(gt)
+suppressMessages(suppressWarnings(library(gt)))
 
 stockholm_codes <- c('11', '12', '13', '14', '15', '16', '17', '18', '19', '76')
 
@@ -126,7 +126,7 @@ covidsymptom::postcode_estimates %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#fgmvisnbve .gt_table {
+#xhxjiylifs .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -151,7 +151,7 @@ covidsymptom::postcode_estimates %>%
   border-left-color: #D3D3D3;
 }
 
-#fgmvisnbve .gt_heading {
+#xhxjiylifs .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -163,7 +163,7 @@ covidsymptom::postcode_estimates %>%
   border-right-color: #D3D3D3;
 }
 
-#fgmvisnbve .gt_title {
+#xhxjiylifs .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -173,7 +173,7 @@ covidsymptom::postcode_estimates %>%
   border-bottom-width: 0;
 }
 
-#fgmvisnbve .gt_subtitle {
+#xhxjiylifs .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -183,13 +183,13 @@ covidsymptom::postcode_estimates %>%
   border-top-width: 0;
 }
 
-#fgmvisnbve .gt_bottom_border {
+#xhxjiylifs .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#fgmvisnbve .gt_col_headings {
+#xhxjiylifs .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -204,7 +204,7 @@ covidsymptom::postcode_estimates %>%
   border-right-color: #D3D3D3;
 }
 
-#fgmvisnbve .gt_col_heading {
+#xhxjiylifs .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -224,7 +224,7 @@ covidsymptom::postcode_estimates %>%
   overflow-x: hidden;
 }
 
-#fgmvisnbve .gt_column_spanner_outer {
+#xhxjiylifs .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -236,15 +236,15 @@ covidsymptom::postcode_estimates %>%
   padding-right: 4px;
 }
 
-#fgmvisnbve .gt_column_spanner_outer:first-child {
+#xhxjiylifs .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#fgmvisnbve .gt_column_spanner_outer:last-child {
+#xhxjiylifs .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#fgmvisnbve .gt_column_spanner {
+#xhxjiylifs .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -256,7 +256,7 @@ covidsymptom::postcode_estimates %>%
   width: 100%;
 }
 
-#fgmvisnbve .gt_group_heading {
+#xhxjiylifs .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -278,7 +278,7 @@ covidsymptom::postcode_estimates %>%
   vertical-align: middle;
 }
 
-#fgmvisnbve .gt_empty_group_heading {
+#xhxjiylifs .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -293,15 +293,15 @@ covidsymptom::postcode_estimates %>%
   vertical-align: middle;
 }
 
-#fgmvisnbve .gt_from_md > :first-child {
+#xhxjiylifs .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#fgmvisnbve .gt_from_md > :last-child {
+#xhxjiylifs .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#fgmvisnbve .gt_row {
+#xhxjiylifs .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -320,7 +320,7 @@ covidsymptom::postcode_estimates %>%
   overflow-x: hidden;
 }
 
-#fgmvisnbve .gt_stub {
+#xhxjiylifs .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -332,7 +332,7 @@ covidsymptom::postcode_estimates %>%
   padding-left: 12px;
 }
 
-#fgmvisnbve .gt_summary_row {
+#xhxjiylifs .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -342,7 +342,7 @@ covidsymptom::postcode_estimates %>%
   padding-right: 5px;
 }
 
-#fgmvisnbve .gt_first_summary_row {
+#xhxjiylifs .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -352,7 +352,7 @@ covidsymptom::postcode_estimates %>%
   border-top-color: #D3D3D3;
 }
 
-#fgmvisnbve .gt_grand_summary_row {
+#xhxjiylifs .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -362,7 +362,7 @@ covidsymptom::postcode_estimates %>%
   padding-right: 5px;
 }
 
-#fgmvisnbve .gt_first_grand_summary_row {
+#xhxjiylifs .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -372,11 +372,11 @@ covidsymptom::postcode_estimates %>%
   border-top-color: #D3D3D3;
 }
 
-#fgmvisnbve .gt_striped {
+#xhxjiylifs .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#fgmvisnbve .gt_table_body {
+#xhxjiylifs .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -385,7 +385,7 @@ covidsymptom::postcode_estimates %>%
   border-bottom-color: #D3D3D3;
 }
 
-#fgmvisnbve .gt_footnotes {
+#xhxjiylifs .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -399,13 +399,13 @@ covidsymptom::postcode_estimates %>%
   border-right-color: #D3D3D3;
 }
 
-#fgmvisnbve .gt_footnote {
+#xhxjiylifs .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#fgmvisnbve .gt_sourcenotes {
+#xhxjiylifs .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -419,47 +419,47 @@ covidsymptom::postcode_estimates %>%
   border-right-color: #D3D3D3;
 }
 
-#fgmvisnbve .gt_sourcenote {
+#xhxjiylifs .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#fgmvisnbve .gt_left {
+#xhxjiylifs .gt_left {
   text-align: left;
 }
 
-#fgmvisnbve .gt_center {
+#xhxjiylifs .gt_center {
   text-align: center;
 }
 
-#fgmvisnbve .gt_right {
+#xhxjiylifs .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#fgmvisnbve .gt_font_normal {
+#xhxjiylifs .gt_font_normal {
   font-weight: normal;
 }
 
-#fgmvisnbve .gt_font_bold {
+#xhxjiylifs .gt_font_bold {
   font-weight: bold;
 }
 
-#fgmvisnbve .gt_font_italic {
+#xhxjiylifs .gt_font_italic {
   font-style: italic;
 }
 
-#fgmvisnbve .gt_super {
+#xhxjiylifs .gt_super {
   font-size: 65%;
 }
 
-#fgmvisnbve .gt_footnote_marks {
+#xhxjiylifs .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
 
-<div id="fgmvisnbve" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="xhxjiylifs" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 
 <table class="gt_table">
 

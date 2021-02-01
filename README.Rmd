@@ -105,7 +105,7 @@ COVID Symptom Study - Sweden provides also predictions at <a href = "https://css
 library(ggplot2)
 library(dplyr)
 library(lubridate)
-library(gt)
+suppressMessages(suppressWarnings(library(gt)))
 
 stockholm_codes <- c('11', '12', '13', '14', '15', '16', '17', '18', '19', '76')
 
