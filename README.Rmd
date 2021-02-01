@@ -118,9 +118,7 @@ max_pred <- max(filtered_data$Uppskattning)
 pred_palette <- scales::col_numeric(c("#f9dee2", "#5E0B21"), domain = c(min_pred, max_pred), alpha = 0.75)
 
 
-
-
-filtered_data %>%
+gt_pred <- filtered_data %>%
   arrange(desc(Uppskattning)) %>%
   gt(.) %>%
   tab_header(
@@ -150,6 +148,8 @@ filtered_data %>%
     table.border.top.color = "transparent",
     table.border.bottom.color = "transparent",
     row_group.background.color = "grey")
+    
+    gt_pred
 
 ```
 
