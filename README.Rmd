@@ -149,9 +149,11 @@ gt_pred <- filtered_data %>%
     table.border.bottom.color = "transparent",
     row_group.background.color = "grey")
     
-    gt_pred
+#gt::gtsave(gt_pred, file = file.path("man/figures/gt.png"))
 
 ```
+
+<a><img src='man/figures/gt.png'/></a>
 
 ```{r warning=FALSE, message=FALSE}
 library(ggplot2)
