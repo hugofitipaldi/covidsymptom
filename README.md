@@ -107,12 +107,822 @@ COVID Symptom Study - Sweden provides also predictions at
 <a href = "https://csss-resultat.github.io/sverige2siffror/">2-digit
 postcode levels</a>.
 
+<!--html_preserve-->
+
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#oimlasdmpj .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: transparent;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: transparent;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#oimlasdmpj .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#oimlasdmpj .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#oimlasdmpj .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 4px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#oimlasdmpj .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#oimlasdmpj .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: transparent;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#oimlasdmpj .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#oimlasdmpj .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#oimlasdmpj .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#oimlasdmpj .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#oimlasdmpj .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#oimlasdmpj .gt_group_heading {
+  padding: 8px;
+  color: #FFFFFF;
+  background-color: grey;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#oimlasdmpj .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #FFFFFF;
+  background-color: grey;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#oimlasdmpj .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#oimlasdmpj .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#oimlasdmpj .gt_row {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#oimlasdmpj .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 12px;
+}
+
+#oimlasdmpj .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#oimlasdmpj .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+}
+
+#oimlasdmpj .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#oimlasdmpj .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#oimlasdmpj .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#oimlasdmpj .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#oimlasdmpj .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#oimlasdmpj .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#oimlasdmpj .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#oimlasdmpj .gt_sourcenote {
+  font-size: 12px;
+  padding: 4px;
+}
+
+#oimlasdmpj .gt_left {
+  text-align: left;
+}
+
+#oimlasdmpj .gt_center {
+  text-align: center;
+}
+
+#oimlasdmpj .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#oimlasdmpj .gt_font_normal {
+  font-weight: normal;
+}
+
+#oimlasdmpj .gt_font_bold {
+  font-weight: bold;
+}
+
+#oimlasdmpj .gt_font_italic {
+  font-style: italic;
+}
+
+#oimlasdmpj .gt_super {
+  font-size: 65%;
+}
+
+#oimlasdmpj .gt_footnote_marks {
+  font-style: italic;
+  font-size: 65%;
+}
+</style>
+
+<div id="oimlasdmpj" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+
+<table class="gt_table" style="table-layout: fixed;">
+
+<colgroup>
+
+<col/>
+
+<col style="width:95px;"/>
+
+<col/>
+
+<col/>
+
+<col/>
+
+<col/>
+
+</colgroup>
+
+<thead class="gt_header">
+
+<tr>
+
+<th colspan="6" class="gt_heading gt_title gt_font_normal" style>
+
+<strong>Predicted number of cases as % of the population</strong>
+
+</th>
+
+</tr>
+
+<tr>
+
+<th colspan="6" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style>
+
+Stockholm’s 2-digit regions
+
+</th>
+
+</tr>
+
+</thead>
+
+<thead class="gt_col_headings">
+
+<tr>
+
+<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold;">
+
+Postnummer
+
+</th>
+
+<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold;">
+
+Datum
+
+</th>
+
+<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold;">
+
+Uppskattning
+
+</th>
+
+<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold;">
+
+Low\_CI
+
+</th>
+
+<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold;">
+
+High\_CI
+
+</th>
+
+<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-weight: bold;">
+
+Ort
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody class="gt_table_body">
+
+<tr>
+
+<td class="gt_row gt_center">
+
+19
+
+</td>
+
+<td class="gt_row gt_center">
+
+2021-01-31
+
+</td>
+
+<td class="gt_row gt_center" style="background-color: #5E0B21; color: #FFFFFF;">
+
+0.70
+
+</td>
+
+<td class="gt_row gt_center">
+
+0.10
+
+</td>
+
+<td class="gt_row gt_center">
+
+3.06
+
+</td>
+
+<td class="gt_row gt_center">
+
+Arlandastad/ Bro/ Kungsängen/ Märsta/ Rosersberg/ Sigtuna/ Sollentuna/
+Steningehöjden/ Stockholm/ Upplands Väsby
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="gt_row gt_center">
+
+18
+
+</td>
+
+<td class="gt_row gt_center">
+
+2021-01-31
+
+</td>
+
+<td class="gt_row gt_center" style="background-color: #96565E; color: #FFFFFF;">
+
+0.58
+
+</td>
+
+<td class="gt_row gt_center">
+
+0.14
+
+</td>
+
+<td class="gt_row gt_center">
+
+1.84
+
+</td>
+
+<td class="gt_row gt_center">
+
+Åkersberga/ Brottby/ Danderyd/ Djursholm/ Enebyberg/ Husarö/ Lidingö/
+Ljusterö/ Österskär/ Stockholm/ Stocksund/ Täby/ Vallentuna/ Vaxholm
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="gt_row gt_center">
+
+14
+
+</td>
+
+<td class="gt_row gt_center">
+
+2021-01-31
+
+</td>
+
+<td class="gt_row gt_center" style="background-color: #A4686F; color: #FFFFFF;">
+
+0.55
+
+</td>
+
+<td class="gt_row gt_center">
+
+0.08
+
+</td>
+
+<td class="gt_row gt_center">
+
+2.43
+
+</td>
+
+<td class="gt_row gt_center">
+
+Grödinge/ Huddinge/ Kungens Kurva/ Landfjärden/ Muskö/ Norsborg/
+Nynäshamn/ Ösmo/ Rönninge/ Segeltorp/ Segersäng/ Skogås/ Sorunda/
+Stockholm/ Stora Vika/ Trångsund/ Tullinge/ Tumba/ Uttran/ Vårby
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="gt_row gt_center">
+
+15
+
+</td>
+
+<td class="gt_row gt_center">
+
+2021-01-31
+
+</td>
+
+<td class="gt_row gt_center" style="background-color: #B68086; color: #000000;">
+
+0.51
+
+</td>
+
+<td class="gt_row gt_center">
+
+0.00
+
+</td>
+
+<td class="gt_row gt_center">
+
+7.07
+
+</td>
+
+<td class="gt_row gt_center">
+
+Enhörna/ Hölö/ Järna/ Mölnbo/ Mörkö/ Nykvarn/ Södertälje
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="gt_row gt_center">
+
+13
+
+</td>
+
+<td class="gt_row gt_center">
+
+2021-01-31
+
+</td>
+
+<td class="gt_row gt_center" style="background-color: #BF8C91; color: #000000;">
+
+0.49
+
+</td>
+
+<td class="gt_row gt_center">
+
+0.09
+
+</td>
+
+<td class="gt_row gt_center">
+
+1.89
+
+</td>
+
+<td class="gt_row gt_center">
+
+Älta/ Årsta Havsbad/ Brandbergen/ Dalarö/ Djurhamn/ Gällnöby/ Gålö/
+Gränö/ Gustavsberg/ Handen/ Haninge/ Harö/ Hårsfjärden/ Ingarö/
+Ingmarsö/ Jordbro/ Möja/ Nacka/ Nacka Strand/ Nämdö/ Norra Sorunda/
+Norrby/ Ornö/ Österhaninge/ Runmarö/ Saltsjö-Boo/ Saltsjö-Duvnäs/
+Saltsjöbaden/ Sandhamn/ Skälvik/ Söderby/ Sollenkroka Ö/ Stavsnäs/
+Stavsudda/ Stockholm/ Tungelsta/ Tynningö/ Tyresö/ Utö/ Värmdö/
+Västerhaninge/ Vega/ Vendelsö
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="gt_row gt_center">
+
+11
+
+</td>
+
+<td class="gt_row gt_center">
+
+2021-01-31
+
+</td>
+
+<td class="gt_row gt_center" style="background-color: #D6ABB0; color: #000000;">
+
+0.44
+
+</td>
+
+<td class="gt_row gt_center">
+
+0.16
+
+</td>
+
+<td class="gt_row gt_center">
+
+1.14
+
+</td>
+
+<td class="gt_row gt_center">
+
+Stockholm
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="gt_row gt_center">
+
+17
+
+</td>
+
+<td class="gt_row gt_center">
+
+2021-01-31
+
+</td>
+
+<td class="gt_row gt_center" style="background-color: #DEB7BC; color: #000000;">
+
+0.42
+
+</td>
+
+<td class="gt_row gt_center">
+
+0.05
+
+</td>
+
+<td class="gt_row gt_center">
+
+2.08
+
+</td>
+
+<td class="gt_row gt_center">
+
+Adelsö/ Drottningholm/ Ekerö/ Färentuna/ Järfälla/ Munsö/ Skå/ Solna/
+Stenhamra/ Stockholm/ Sundbyberg/ Svartsjö
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="gt_row gt_center">
+
+16
+
+</td>
+
+<td class="gt_row gt_center">
+
+2021-01-31
+
+</td>
+
+<td class="gt_row gt_center" style="background-color: #F0D1D5; color: #000000;">
+
+0.38
+
+</td>
+
+<td class="gt_row gt_center">
+
+0.05
+
+</td>
+
+<td class="gt_row gt_center">
+
+1.76
+
+</td>
+
+<td class="gt_row gt_center">
+
+Bromma/ Hässelby/ Kista/ Solna/ Spånga/ Stockholm/ Vällingby
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="gt_row gt_center">
+
+12
+
+</td>
+
+<td class="gt_row gt_center">
+
+2021-01-31
+
+</td>
+
+<td class="gt_row gt_center" style="background-color: #F9DEE2; color: #000000;">
+
+0.36
+
+</td>
+
+<td class="gt_row gt_center">
+
+0.08
+
+</td>
+
+<td class="gt_row gt_center">
+
+1.21
+
+</td>
+
+<td class="gt_row gt_center">
+
+Älvsjö/ Årsta/ Bagarmossen/ Bandhagen/ Enskede/ Enskede Gård/
+Enskededalen/ Farsta/ Hägersten/ Johanneshov/ Skärholmen/ Skarpnäck/
+Sköndal/ Stockholm/ Stockholm-Globen
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<!--/html_preserve-->
+
 ``` r
 library(ggplot2)
 library(dplyr)
 library(lubridate)
 
-stockholm_codes <- c('11', '12', '13', '14', '15', '16', '17', '18', '19', '76')
+stockholm_codes <- c('11', '12', '13', '14', '15', '16', '17', '18', '19')
 
 covidsymptom::postcode_estimates %>%
   filter(Postnummer %in% stockholm_codes) %>%
@@ -128,7 +938,7 @@ covidsymptom::postcode_estimates %>%
   facet_wrap(. ~ Postnummer)   
 ```
 
-<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
 
 ## Dashboard
 
