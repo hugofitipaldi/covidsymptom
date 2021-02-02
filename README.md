@@ -107,12 +107,52 @@ COVID Symptom Study - Sweden provides also predictions at
 <a href = "https://csss-resultat.github.io/sverige2siffror/">2-digit
 postcode levels</a>.
 
-<a><img src='man/figures/gt.png'/></a>
-
 ``` r
 library(ggplot2)
 library(dplyr)
 library(lubridate)
+library(gt)
+
+stockholm_codes <- c('11', '12', '13', '14', '15', '16', '17', '18', '19', '76')
+
+filtered_data <- covidsymptom::postcode_estimates %>%
+  filter(Postnummer %in% stockholm_codes & Datum == as.Date("2021-01-31") & !is.na(Uppskattning))
+
+min_pred <- min(filtered_data$Uppskattning)
+max_pred <- max(filtered_data$Uppskattning)
+pred_palette <- scales::col_numeric(c("#f9dee2", "#5E0B21"), domain = c(min_pred, max_pred), alpha = 0.75)
+
+
+filtered_data %>%
+  arrange(desc(Uppskattning)) %>%
+  gt(.) %>%
+  tab_header(
+    title = md("**Predicted number of cases as % of the population**"),
+    subtitle = "Stockholm's 2-digit regions"
+  ) %>% 
+  cols_width(starts_with("Datum") ~ px(95)) %>%
+  tab_style(
+    locations = cells_column_labels(columns = everything()),
+    style     = list(
+      cell_borders(sides = "bottom", weight = px(3)),
+      cell_text(weight = "bold")
+    )) %>% 
+  cols_align("center") %>% 
+  data_color(columns = vars(Uppskattning),
+             colors = pred_palette) %>%
+  tab_source_note(source_note = "Data: COVID Symptom Study Sweden") %>%
+  tab_options(
+    column_labels.border.top.width = px(3),
+    data_row.padding = px(3),
+    source_notes.font.size = 12,
+    table.font.size = 12,
+    heading.align = "center",
+    row_group.background.color = "grey")
+```
+
+<a><img src='man/figures/gt.png'/></a>
+
+``` r
 
 stockholm_codes <- c('11', '12', '13', '14', '15', '16', '17', '18', '19')
 

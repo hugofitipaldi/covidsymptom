@@ -102,7 +102,7 @@ covidsymptom::county_estimates %>%
 COVID Symptom Study - Sweden provides also predictions at <a href = "https://csss-resultat.github.io/sverige2siffror/">2-digit postcode levels</a>. 
 
 
-```{r warning=FALSE, message=FALSE, echo=FALSE}
+```{r eval=FALSE}
 library(ggplot2)
 library(dplyr)
 library(lubridate)
@@ -118,7 +118,7 @@ max_pred <- max(filtered_data$Uppskattning)
 pred_palette <- scales::col_numeric(c("#f9dee2", "#5E0B21"), domain = c(min_pred, max_pred), alpha = 0.75)
 
 
-gt_pred <- filtered_data %>%
+filtered_data %>%
   arrange(desc(Uppskattning)) %>%
   gt(.) %>%
   tab_header(
@@ -129,36 +129,26 @@ gt_pred <- filtered_data %>%
   tab_style(
     locations = cells_column_labels(columns = everything()),
     style     = list(
-      #Give a thick border below
       cell_borders(sides = "bottom", weight = px(3)),
-      #Make text bold
       cell_text(weight = "bold")
     )) %>% 
   cols_align("center") %>% 
   data_color(columns = vars(Uppskattning),
              colors = pred_palette) %>%
-  #tab_source_note(source_note = "Data: COVID Symptom Study Sweden") %>%
+  tab_source_note(source_note = "Data: COVID Symptom Study Sweden") %>%
   tab_options(
     column_labels.border.top.width = px(3),
-    column_labels.border.top.color = "transparent",
     data_row.padding = px(3),
     source_notes.font.size = 12,
     table.font.size = 12,
     heading.align = "center",
-    table.border.top.color = "transparent",
-    table.border.bottom.color = "transparent",
     row_group.background.color = "grey")
-    
-#gt::gtsave(gt_pred, file = file.path("man/figures/gt.png"))
 
 ```
 
 <a><img src='man/figures/gt.png'/></a>
 
 ```{r warning=FALSE, message=FALSE}
-library(ggplot2)
-library(dplyr)
-library(lubridate)
 
 stockholm_codes <- c('11', '12', '13', '14', '15', '16', '17', '18', '19')
 
