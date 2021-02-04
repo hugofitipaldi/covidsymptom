@@ -3,6 +3,10 @@
 
 <!-- badges: start --->
 
+[![](https://img.shields.io/badge/devel%20version-0.0.0.9000-blue.svg)](https://github.com/csss-resultat/covidsymptom)
+[![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![](https://img.shields.io/github/last-commit/csss-resultat/covidsymptom.svg)](https://github.com/csss-resultat/covidsymptom/commits/master)
+
 <!-- badges: end -->
 
 The covidsymptom R package provides an easy way to import open data from
@@ -72,7 +76,7 @@ covidsymptom::national_estimates %>%
   geom_ribbon(aes(ymin = Low_CI, ymax = High_CI), fill = "#a60f61", alpha = 0.09)
 ```
 
-<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
 
   - Counties’ estimates
 
@@ -99,7 +103,7 @@ covidsymptom::county_estimates %>%
       facet_wrap(. ~ Lan) 
 ```
 
-<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
   - 2-digit postcodes’ estimates
 
@@ -170,7 +174,7 @@ covidsymptom::postcode_estimates %>%
   facet_wrap(. ~ Postnummer)   
 ```
 
-<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
 
 ## Dashboard
 

@@ -4,7 +4,14 @@ output: github_document
 
 # covidsymptom <a href='https://github.com/csss-resultat/covidsymptom'><img src='man/figures/hex2.png' width="15%" align="right"  /></a>
 
+```{r echo = FALSE}
+library(badger)
+```
+
 <!-- badges: start --->
+`r badge_devel("csss-resultat/covidsymptom", "blue")`
+`r badge_lifecycle("experimental", "orange")`
+`r badge_last_commit("csss-resultat/covidsymptom")`
 
 <!-- badges: end -->
 
