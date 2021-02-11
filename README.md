@@ -3,7 +3,7 @@
 
 <!-- badges: start --->
 
-[![](https://img.shields.io/badge/devel%20version-0.9-blue.svg)](https://github.com/csss-resultat/covidsymptom)
+[![](https://img.shields.io/badge/devel%20version-0.1-blue.svg)](https://github.com/csss-resultat/covidsymptom)
 [![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![](https://img.shields.io/github/last-commit/csss-resultat/covidsymptom.svg)](https://github.com/csss-resultat/covidsymptom/commits/master)
 
@@ -37,9 +37,9 @@ available:
 
 ``` r
 library(covidsymptom)
-get_latest_data()
+national_estimates <- get_latest_data(data_level = "national")
 
-head(level_national)
+head(national_estimates)
 #>        Datum Uppskattning Low_CI High_CI
 #> 1 2020-05-11         0.66   0.60    0.74
 #> 2 2020-05-12         0.69   0.63    0.77
@@ -185,11 +185,18 @@ A supporting dashboard is available
 
 ## About COVID Symptom Study - Sweden
 
-COVID Symptom Study Sweden uses an app to collect data from study
-participants. The app COVID Symptom Study was developed by the British
-health company ZOE Global Ltd with the help of scientific analyzes from
-King’s College London and Guys and St Thomas hospitals in London and
-launched in the UK on March 23, 2020. On April 29, 2020, the app was
-launched in Sweden after adapting to Swedish conditions . The app is
-maintained by Zoe Global Ltd and ZOE shares data collected in Sweden
-with Lund University for processing and analysis.
+The COVID Symptom Study is a non-commercial project that uses a free
+smartphone app to facilitate real-time data collection of symptoms,
+exposures, and risk factors related to COVID-19. The app was developed
+by researchers at King’s College and Guys and St Thomas’ Hospitals in
+London in partnership with health science company Zoe Global
+Ltd. Baseline data and recurring daily questions are described in
+<a href = https://science.sciencemag.org/content/368/6497/1362> Drew et
+al (Science, 2020)</a>. The app was launched in the UK and US March
+2020. In Sweden, the study is based at Lund University and, as per a
+collaboration agreement on 28 July 2020, Uppsala University. The app was
+launched in Sweden on April 29, 2020 as part of a national research
+initiative on COVID-19. To date, \>4.5 million participants in the three
+countries are using the app, \~202,000 of whom live in Sweden.
+Participants have so far made \~271 million data entries, with Swedish
+participants contributing \~11 million of these.

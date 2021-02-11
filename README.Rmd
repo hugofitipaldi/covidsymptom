@@ -47,9 +47,9 @@ Data from COVID Symptom Study - Sweden is updated on a daily basis. If you want 
 
 ```{r example}
 library(covidsymptom)
-get_latest_data()
+national_estimates <- get_latest_data(data_level = "national")
 
-head(level_national)
+head(national_estimates)
 ```
 
 ## Usage
@@ -184,5 +184,16 @@ A supporting dashboard is available [here](https://csss-resultat.shinyapps.io/cs
 
 ## About COVID Symptom Study - Sweden
 
-COVID Symptom Study Sweden uses an app to collect data from study participants. The app COVID Symptom Study was developed by the British health company ZOE Global Ltd with the help of scientific analyzes from King's College London and Guys and St Thomas hospitals in London and launched in the UK on March 23, 2020. On April 29, 2020, the app was launched in Sweden after adapting to Swedish conditions . The app is maintained by Zoe Global Ltd and ZOE shares data collected in Sweden with Lund University for processing and analysis.
+The COVID Symptom Study is a non-commercial project that uses a free smartphone
+app to facilitate real-time data collection of symptoms, exposures, and risk factors
+related to COVID-19. The app was developed by researchers at King’s College and
+Guys and St Thomas’ Hospitals in London in partnership with health science
+company Zoe Global Ltd. Baseline data and recurring daily questions are described in
+<a href = https://science.sciencemag.org/content/368/6497/1362> Drew et al (Science, 2020)</a>. The app was launched in the UK and US March 2020. In
+Sweden, the study is based at Lund University and, as per a collaboration
+agreement on 28 July 2020, Uppsala University. The app was launched in Sweden on April 29, 2020
+as part of a national research initiative on COVID-19. To date, >4.5 million
+participants in the three countries are using the app, ~202,000 of whom live in
+Sweden. Participants have so far made ~271 million data entries, with Swedish
+participants contributing ~11 million of these.
 

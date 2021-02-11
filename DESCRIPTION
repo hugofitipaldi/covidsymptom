@@ -1,12 +1,12 @@
 Package: covidsymptom
-Title: COVID Symptom Study Sweden data
-Version: 0.9
+Title: COVID Symptom Study Sweden open dataset
+Version: 0.1
 Authors@R: 
     person(given = "Hugo",
            family = "Fitipaldi",
            role = c("aut", "cre"),
            email = "hugo.fitipaldi@med.lu.se")
-Description: Accesses COVID Symptom Study - Sweden open datasets.
+Description: The COVID Symptom Study is a non-commercial project that uses a free smartphone app to facilitate real-time data collection of symptoms, exposures, and risk factors related to COVID-19. The package allows easy access to summary statistics data from COVID Symptom Study Sweden.
 License: use_mit_license()
 Encoding: UTF-8
 LazyData: true
@@ -14,3 +14,5 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Depends: 
     R (>= 2.10)
+Imports:
+    rio

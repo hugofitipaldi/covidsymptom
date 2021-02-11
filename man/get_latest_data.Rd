@@ -4,10 +4,10 @@
 \alias{get_latest_data}
 \title{Function to retrieve latest COVID Symptom Study - Sweden datasets}
 \usage{
-get_latest_data(data_level = c("all", "national", "county", "postcode"))
+get_latest_data(data_level = c("national", "county", "postcode"))
 }
 \arguments{
-\item{infile}{dataset level}
+\item{data_level}{selects which dataset from CSSS you want to download}
 }
 \value{
 selected dataset
