@@ -16,3 +16,7 @@ Depends:
     R (>= 2.10)
 Imports:
     rio
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
