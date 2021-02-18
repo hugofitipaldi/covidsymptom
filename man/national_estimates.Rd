@@ -3,23 +3,23 @@
 \docType{data}
 \name{national_estimates}
 \alias{national_estimates}
-\title{national_estimates}
+\title{Estimates of COVID-19 in Sweden (national level)}
 \format{
-A data frame with 261 rows and 4 variables:
+A data frame of 4 columns
 \describe{
-\item{\code{Datum}}{double Date}
-\item{\code{Uppskattning}}{double Prediction (\%) of covid for Sweden based on reported symptoms}
-\item{\code{Low_CI}}{double Confidence Interval - lower bound}
-\item{\code{High_CI}}{double Confidence Interval - higher bound}
+\item{Datum}{Date of prediction}
+\item{Uppskattning}{Estimated prevalence of COVID-19 in Sweden}
+\item{Low_CI}{Confidence Interval Lower Bound}
+\item{High_CI}{Confidence Interval Higher Bound}
 }
 }
 \source{
-\url{http://somewhere.important.com/}
+COVID Symptom Study-Sweden
 }
 \usage{
 national_estimates
 }
 \description{
-COVID Symptom Study data - national level
+A dataset containing predictions of COVID Symptom Study Sweden at national level
 }
 \keyword{datasets}

@@ -6,14 +6,13 @@ county_estimates <- rio::import("https://raw.githubusercontent.com/csss-resultat
 postcode_estimates <- rio::import("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/siffror_senaste.csv")
 
 
-# Data cleaning code here...
+# Data cleaning
 national_estimates$Datum <- as.Date(national_estimates$Datum, format = "%Y-%m-%d")
 county_estimates$Datum <- as.Date(county_estimates$Datum, format = "%Y-%m-%d")
 postcode_estimates$Datum <- as.Date(postcode_estimates$Datum, format = "%Y-%m-%d")
 postcode_estimates$Postnummer <- as.character(postcode_estimates$Postnummer)
+county_estimates$Lan <- stringi::stri_trans_general(str = county_estimates$Lan,id = "Latin-ASCII")
+postcode_estimates$Ort <- stringi::stri_trans_general(str = postcode_estimates$Ort,id = "Latin-ASCII")
 
-# This should be the last line.
-# Note that names are unquoted.
-# I like using overwrite = T so everytime I run the script the
-# updated objects are saved, but the default is overwrite = F
+# Data update
 usethis::use_data(national_estimates, county_estimates, postcode_estimates, overwrite = TRUE)

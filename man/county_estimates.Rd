@@ -3,24 +3,24 @@
 \docType{data}
 \name{county_estimates}
 \alias{county_estimates}
-\title{county_estimates}
+\title{Estimates of COVID-19 in Sweden (county level)}
 \format{
-A data frame with 5481 rows and 5 variables:
+A data frame of 5 columns
 \describe{
-\item{\code{Lan}}{character Swedish county}
-\item{\code{Datum}}{double Date}
-\item{\code{Uppskattning}}{double Prediction of covid for county based on reported symptoms}
-\item{\code{Low_CI}}{double Confidence Interval - lower bound}
-\item{\code{High_CI}}{double Confidence Interval - higher bound}
+\item{Lan}{Swedish county}
+\item{Datum}{Date of prediction}
+\item{Uppskattning}{Estimated prevalence of COVID-19 in Sweden}
+\item{Low_CI}{Confidence Interval Lower Bound}
+\item{High_CI}{Confidence Interval Higher Bound}
 }
 }
 \source{
-\url{http://somewhere.important.com/}
+COVID Symptom Study-Sweden
 }
 \usage{
 county_estimates
 }
 \description{
-COVID Symptom Study data - county level
+A dataset containing predictions of COVID Symptom Study Sweden at national level
 }
 \keyword{datasets}

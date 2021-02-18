@@ -2,16 +2,26 @@
 % Please edit documentation in R/get_latest_data.R
 \name{get_latest_data}
 \alias{get_latest_data}
-\title{Function to retrieve latest COVID Symptom Study - Sweden datasets}
+\title{Retrieve updated COVID Symptom Study Sweden (CSSS) data}
 \usage{
 get_latest_data(data_level = c("national", "county", "postcode"))
 }
 \arguments{
-\item{data_level}{selects which dataset from CSSS you want to download}
+\item{data_level}{selects which data set from CSSS you want to download: "national" (default), "county" or "postcode"}
 }
 \value{
-selected dataset
+This function returns the selected \code{data.frame}
 }
 \description{
-This function imports the later CSSS datasets
+Downloads latest version of CSSS data.
+}
+\details{
+This function was designed to download the latest data from COVID Symptom Study Sweden without the need to update the package on a regular basis.
+}
+\examples{
+df <- get_latest_data(data_level = "county")
+
+}
+\author{
+Hugo Fitipaldi
 }

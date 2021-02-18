@@ -40,13 +40,8 @@ library(covidsymptom)
 national_estimates <- get_latest_data(data_level = "national")
 
 head(national_estimates)
-#>        Datum Uppskattning Low_CI High_CI
-#> 1 2020-05-11         0.66   0.60    0.74
-#> 2 2020-05-12         0.69   0.63    0.77
-#> 3 2020-05-13         0.71   0.65    0.79
-#> 4 2020-05-14         0.72   0.65    0.79
-#> 5 2020-05-15         0.71   0.65    0.78
-#> 6 2020-05-16         0.70   0.64    0.77
+#> [1] "2020-05-11" "2020-05-12" "2020-05-13" "2020-05-14" "2020-05-15"
+#> [6] "2020-05-16"
 ```
 
 ## Usage
@@ -87,7 +82,7 @@ library(ggplot2)
 library(dplyr)
 library(lubridate)
 
-counties_selection <- c("Skåne", "Stockholm", "Västra Götaland", "Uppsala")
+counties_selection <- c("Skane", "Stockholm", "Vastra Gotaland", "Uppsala")
 
 covidsymptom::county_estimates %>%
   filter(Lan %in% counties_selection) %>%

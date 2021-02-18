@@ -3,24 +3,25 @@
 \docType{data}
 \name{postcode_estimates}
 \alias{postcode_estimates}
-\title{postcode_estimates}
+\title{Estimates of COVID-19 in Sweden (2-digit postal code level)}
 \format{
-A data frame with 22427 rows and 5 variables:
+A data frame of 5 columns
 \describe{
-\item{\code{Postnummer}}{integer 2-digit postal code region}
-\item{\code{Datum}}{double Date}
-\item{\code{Uppskattning}}{double Prediction of covid for 2-digit region based on reported symptoms}
-\item{\code{Low_CI}}{double Confidence Interval - lower bound}
-\item{\code{High_CI}}{double Confidence Interval - higher bound}
+\item{Postnummer}{2-digit postal code area}
+\item{Datum}{Date of prediction}
+\item{Uppskattning}{Estimated prevalence of COVID-19 in Sweden}
+\item{Low_CI}{Confidence Interval Lower Bound}
+\item{High_CI}{Confidence Interval Higher Bound}
+\item{Ort}{Regions/cities within the postcode area }
 }
 }
 \source{
-\url{http://somewhere.important.com/}
+COVID Symptom Study-Sweden
 }
 \usage{
 postcode_estimates
 }
 \description{
-COVID Symptom Study data - 2-digit postcode level
+A dataset containing predictions of COVID Symptom Study Sweden at national level
 }
 \keyword{datasets}
