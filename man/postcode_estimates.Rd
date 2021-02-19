@@ -16,7 +16,7 @@ A data frame of 5 columns
 }
 }
 \source{
-COVID Symptom Study-Sweden
+COVID Symptom Study-Sweden \href{https://www.covid19app.lu.se/}{website}.
 }
 \usage{
 postcode_estimates
@@ -24,4 +24,13 @@ postcode_estimates
 \description{
 A dataset containing predictions of COVID Symptom Study Sweden at national level
 }
+\details{
+This dataset contains daily estimated prevalence of symptomatic covid-19
+in swedish 2-digit postcode regions.
+}
+\examples{
+data(postcode_estimates)
+}
+\keyword{COVID19}
+\keyword{coronavirus}
 \keyword{datasets}
