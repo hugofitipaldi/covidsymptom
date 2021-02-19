@@ -5,9 +5,11 @@
 #' This function enables to refresh the package dataset to the most up-to-date data by re-installing the dev version of the package.
 #' Changes will be available on the global environment
 #'
+#' @param silence logical function to supress messages
 #' @author Hugo Fitipaldi
 #'
 #' @import rio
+#' @import remotes
 #'
 #' @return Updated data.frames
 #' @export

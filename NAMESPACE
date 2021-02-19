@@ -2,5 +2,6 @@
 
 export(get_latest_data)
 export(update_csss_data)
+import(remotes)
 import(rio)
 import(stringi)

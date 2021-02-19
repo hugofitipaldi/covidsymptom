@@ -6,6 +6,9 @@
 \usage{
 update_csss_data(silence = FALSE)
 }
+\arguments{
+\item{silence}{logical function to supress messages}
+}
 \value{
 Updated data.frames
 }
