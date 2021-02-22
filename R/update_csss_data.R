@@ -43,9 +43,7 @@ update_csss_data <- function(silence = FALSE){
 
       base::tryCatch(
         expr = {
-          remotes::install_github("csss-resultat/covidsymptom",
-                                   upgrade = "never",
-                                   ref = "master")
+          remotes::install_github("csss-resultat/covidsymptom")
 
           if ("covidsymptom" %in% names(utils::sessionInfo()$otherPkgs)) {
             detach(package:covidsymptom, unload = TRUE)
