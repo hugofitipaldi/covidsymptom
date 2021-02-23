@@ -48,7 +48,15 @@ remotes::install_github("csss-resultat/covidsymptom")
 ```
 ## Update data
 
-Data from COVID Symptom Study - Sweden is updated on a daily basis. If you want to avoid updating the package to have the most recent data, you can use the function get_latest_data() to import the latest version available:
+Data from COVID Symptom Study - Sweden is updated on a daily basis. We have implemented the function ```update_csss_data()``` to update the datasets based on the <a href = https://github.com/RamiKrispin/coronavirus> coronavirus package.</a> this functions updates the package to the dev version in GitHub.
+
+``` r
+library(covidsymptom)
+update_csss_data()
+```
+
+
+If you want to avoid updating the package to have the most recent data, you can use the function ```get_latest_data()``` to import the latest version available:
 
 
 ```{r example}
