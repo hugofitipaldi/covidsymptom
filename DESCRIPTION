@@ -1,6 +1,6 @@
 Package: covidsymptom
 Title: COVID Symptom Study Sweden Open Dataset
-Version: 0.9
+Version: 0.9.1
 Authors@R: 
     person(given = "Hugo",
            family = "Fitipaldi",

@@ -3,7 +3,8 @@
 
 <!-- badges: start --->
 
-[![](https://img.shields.io/badge/devel%20version-0.9-blue.svg)](https://github.com/csss-resultat/covidsymptom)
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/covidsymptom)](https://cran.r-project.org/package=covidsymptom)
+[![](https://img.shields.io/badge/devel%20version-0.9.1-blue.svg)](https://github.com/csss-resultat/covidsymptom)
 [![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![](https://img.shields.io/github/last-commit/csss-resultat/covidsymptom.svg)](https://github.com/csss-resultat/covidsymptom/commits/master)
 
@@ -20,6 +21,12 @@ the COVID Symptom Study-Sweden. The package includes three datasets:
     COVID-19 in smaller Swedish regions (2-digit postcodes)
 
 ## Installation
+
+Install the CRAN version:
+
+``` r
+install_packages("covidsymptom")
+```
 
 Development version of the package can be installed from Github with:
 

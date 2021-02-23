@@ -9,6 +9,7 @@ library(badger)
 ```
 
 <!-- badges: start --->
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/covidsymptom)](https://cran.r-project.org/package=covidsymptom)
 `r badge_devel("csss-resultat/covidsymptom", "blue")`
 `r badge_lifecycle("experimental", "orange")`
 `r badge_last_commit("csss-resultat/covidsymptom")`
@@ -33,6 +34,11 @@ The covidsymptom R package provides an easy way to import open data from the COV
 
 
 ## Installation
+
+Install the CRAN version:
+``` r
+install_packages("covidsymptom")
+```
 
 Development version of the package can be installed from Github with:
 
