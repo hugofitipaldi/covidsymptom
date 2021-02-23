@@ -35,7 +35,7 @@ update_csss_data <- function(silence = FALSE){
 
   if(flag){
     if(!silence){
-      q <- base::tolower(base::readline("Updates are available on the covidsymptom dev version, do you want to update? n/Y"))
+      q <- base::tolower(base::readline("Updates are available on the covidsymptom dev version, do you want to install this version? n/Y"))
     } else {
       q <- "y"
     }
@@ -51,6 +51,7 @@ update_csss_data <- function(silence = FALSE){
             detach(package:covidsymptom, unload = TRUE)
             library(covidsymptom)
           }
+          .rs.restartR(silence == TRUE)
         },
         error = function(e){
           message('Caught an error!')
