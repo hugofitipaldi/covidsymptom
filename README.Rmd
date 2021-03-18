@@ -1,30 +1,43 @@
+---
+output: github_document
+---
 
 # covidsymptom <a href='https://github.com/csss-resultat/covidsymptom'><img src='man/figures/hex3.png' width="15%" align="right"  /></a>
+
+```{r echo = FALSE}
+library(badger)
+```
 
 <!-- badges: start --->
 
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/covidsymptom)](https://cran.r-project.org/package=covidsymptom)
-![CRAN\_Badge](https://cranlogs.r-pkg.org/badges/grand-total/covidsymptom)
-[![](https://img.shields.io/badge/devel%20version-0.9.1-blue.svg)](https://github.com/csss-resultat/covidsymptom)
-[![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![](https://img.shields.io/github/last-commit/csss-resultat/covidsymptom.svg)](https://github.com/csss-resultat/covidsymptom/commits/master)
+![CRAN\Download\_Badge](https://cranlogs.r-pkg.org/badges/grand-total/covidsymptom)
+`r badge_devel("csss-resultat/covidsymptom", "blue")`
+`r badge_lifecycle("experimental", "orange")`
+`r badge_last_commit("csss-resultat/covidsymptom")`
 
 <!-- badges: end -->
 
-The covidsymptom R package provides an easy way to import open data from
-the COVID Symptom Study-Sweden. The package includes three datasets:
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
 
-  - `national_estimates` - daily estimated incidence of symptomatic
-    COVID-19 in Sweden
-  - `county_estimates` - daily estimated incidence of symptomatic
-    COVID-19 in Swedish counties
-  - `postcode_estimates` - daily estimated incidence of symptomatic
-    COVID-19 in smaller Swedish regions (2-digit postcodes)
+
+The covidsymptom R package provides an easy way to import open data from the COVID Symptom Study-Sweden. The package includes three datasets:
+
+- `national_estimates` - daily estimated incidence of symptomatic COVID-19 in Sweden
+- `county_estimates` - daily estimated incidence of symptomatic COVID-19 in Swedish counties
+- `postcode_estimates` - daily estimated incidence of symptomatic COVID-19 in smaller Swedish regions (2-digit postcodes)
+
 
 ## Installation
 
 Install the CRAN version:
-
 ``` r
 install_packages("covidsymptom")
 ```
@@ -35,46 +48,31 @@ Development version of the package can be installed from Github with:
 install.packages("remotes")
 remotes::install_github("csss-resultat/covidsymptom")
 ```
-
 ## Update data
 
-Data from COVID Symptom Study - Sweden is updated on a daily basis. We
-have implemented the function `update_csss_data()` to update the
-datasets based on the
-<a href = https://github.com/RamiKrispin/coronavirus> coronavirus
-package.</a> this functions updates the package to the dev version in
-GitHub.
+Data from COVID Symptom Study - Sweden is updated on a daily basis. We have implemented the function ```update_csss_data()``` to update the datasets based on the <a href = https://github.com/RamiKrispin/coronavirus> coronavirus package.</a> this functions updates the package to the dev version in GitHub.
 
 ``` r
 library(covidsymptom)
 update_csss_data()
 ```
 
-If you want to avoid updating the package to have the most recent data,
-you can use the function `get_latest_data()` to import the latest
-version available:
 
-``` r
+If you want to avoid updating the package to have the most recent data, you can use the function ```get_latest_data()``` to import the latest version available:
+
+
+```{r example}
 library(covidsymptom)
 national_estimates <- get_latest_data(data_level = "national")
 
 head(national_estimates)
-#>        Datum Uppskattning Low_CI High_CI
-#> 1 2020-05-11         0.66   0.60    0.74
-#> 2 2020-05-12         0.69   0.63    0.77
-#> 3 2020-05-13         0.71   0.65    0.79
-#> 4 2020-05-14         0.72   0.65    0.79
-#> 5 2020-05-15         0.71   0.65    0.78
-#> 6 2020-05-16         0.70   0.64    0.77
 ```
 
 ## Usage
 
-  - National estimates
+- National estimates
 
-<!-- end list -->
-
-``` r
+```{r warning=FALSE, message=FALSE}
 library(ggplot2)
 library(dplyr)
 
@@ -93,15 +91,13 @@ covidsymptom::national_estimates %>%
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1), panel.grid.minor.x = element_blank()) +
   geom_ribbon(aes(ymin = Low_CI, ymax = High_CI), fill = "#a60f61", alpha = 0.09)
+
+
 ```
 
-<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+- Counties' estimates
 
-  - Counties’ estimates
-
-<!-- end list -->
-
-``` r
+```{r warning=FALSE, message=FALSE}
 library(ggplot2)
 library(dplyr)
 library(lubridate)
@@ -120,17 +116,16 @@ covidsymptom::county_estimates %>%
             legend.position = "none", plot.title = element_text(hjust = 0.5)) + 
       geom_ribbon(aes(ymin = Low_CI, ymax = High_CI), color = "transparent", fill = "#a60f61", alpha = 0.09) +
       facet_wrap(. ~ Lan) 
+
+
 ```
 
-<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
+- 2-digit postcodes' estimates
 
-  - 2-digit postcodes’ estimates
+COVID Symptom Study - Sweden provides also predictions at <a href = "https://csss-resultat.github.io/sverige2siffror/">2-digit postcode levels</a>. 
 
-COVID Symptom Study - Sweden provides also predictions at
-<a href = "https://csss-resultat.github.io/sverige2siffror/">2-digit
-postcode levels</a>.
 
-``` r
+```{r eval=FALSE}
 library(ggplot2)
 library(dplyr)
 library(lubridate)
@@ -171,11 +166,12 @@ filtered_data %>%
     table.font.size = 12,
     heading.align = "center",
     row_group.background.color = "grey")
+
 ```
 
 <a><img src='man/figures/gt.png'/></a>
 
-``` r
+```{r warning=FALSE, message=FALSE}
 
 stockholm_codes <- c('11', '12', '13', '14', '15', '16', '17', '18', '19')
 
@@ -191,31 +187,29 @@ covidsymptom::postcode_estimates %>%
         legend.position = "none", plot.title = element_text(hjust = 0.5)) + 
   geom_ribbon(aes(ymin = Low_CI, ymax = High_CI), color = "transparent", fill = "#a60f61", alpha = 0.09) +
   facet_wrap(. ~ Postnummer)   
+
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
 
 ## Dashboard
 
-A supporting dashboard is available
-[here](https://csss-resultat.shinyapps.io/csss_dashboard/)
+A supporting dashboard is available [here](https://csss-resultat.shinyapps.io/csss_dashboard/)
 
 <img src="man/figures/dashboard.png" width="100%" />
 
+
 ## About COVID Symptom Study - Sweden
 
-The COVID Symptom Study is a non-commercial project that uses a free
-smartphone app to facilitate real-time data collection of symptoms,
-exposures, and risk factors related to COVID-19. The app was developed
-by researchers at King’s College and Guys and St Thomas’ Hospitals in
-London in partnership with health science company Zoe Global
-Ltd. Baseline data and recurring daily questions are described in
-<a href = https://science.sciencemag.org/content/368/6497/1362> Drew et
-al (Science, 2020)</a>. The app was launched in the UK and US March
-2020. In Sweden, the study is based at Lund University and, as per a
-collaboration agreement on 28 July 2020, Uppsala University. The app was
-launched in Sweden on April 29, 2020 as part of a national research
-initiative on COVID-19. To date, \>4.5 million participants in the three
-countries are using the app, \~202,000 of whom live in Sweden.
-Participants have so far made \~271 million data entries, with Swedish
-participants contributing \~11 million of these.
+The COVID Symptom Study is a non-commercial project that uses a free smartphone
+app to facilitate real-time data collection of symptoms, exposures, and risk factors
+related to COVID-19. The app was developed by researchers at King’s College and
+Guys and St Thomas’ Hospitals in London in partnership with health science
+company Zoe Global Ltd. Baseline data and recurring daily questions are described in
+<a href = https://science.sciencemag.org/content/368/6497/1362> Drew et al (Science, 2020)</a>. The app was launched in the UK and US March 2020. In
+Sweden, the study is based at Lund University and, as per a collaboration
+agreement on 28 July 2020, Uppsala University. The app was launched in Sweden on April 29, 2020
+as part of a national research initiative on COVID-19. To date, >4.5 million
+participants in the three countries are using the app, ~202,000 of whom live in
+Sweden. Participants have so far made ~271 million data entries, with Swedish
+participants contributing ~11 million of these.
+
