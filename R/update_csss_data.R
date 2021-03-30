@@ -8,10 +8,6 @@
 #' @param silence logical function to supress messages
 #' @author Hugo Fitipaldi
 #'
-#' @import rio
-#' @import remotes
-#' @import utils
-#'
 #' @return Updated data.frames
 #' @export
 #'
@@ -24,7 +20,7 @@ update_csss_data <- function(silence = FALSE){
   flag <- FALSE
   cat(paste0("\033[4;", 32, "m","Checking for updates for the covidsymptom package","\033[0m","\n"))
   cat("covidsymptom dataset...")
-  national_csv <- rio::import("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/nationella_senaste.csv")
+  national_csv <- readr::read_csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/nationella_senaste.csv")
   national_csv$Datum <- as.Date(national_csv$Datum, format = "%Y-%m-%d")
 
   covidsymptom_current <- covidsymptom::national_estimates
@@ -46,7 +42,7 @@ update_csss_data <- function(silence = FALSE){
       if ("covidsymptom" %in% rownames(utils::installed.packages())) { utils::remove.packages("covidsymptom")}
       base::tryCatch(
         expr = {
-          remotes::install_github("csss-resultat/covidsymptom",
+          devtools::install_github("csss-resultat/covidsymptom",
                                   upgrade = "never",
                                   ref = "master")
           if ("covidsymptom" %in% names(utils::sessionInfo()$otherPkgs)) {

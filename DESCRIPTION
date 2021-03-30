@@ -5,7 +5,7 @@ Authors@R:
     person(given = "Hugo",
            family = "Fitipaldi",
            role = c("aut", "cre"),
-           email = "hugo.fitialdi@med.lu.se")
+           email = "hugo.fitipaldi@med.lu.se")
 Description: The COVID Symptom Study is a non-commercial project that uses a free mobile app to facilitate real-time data collection of symptoms, exposures, and risk factors related to COVID19. The package allows easy access to summary statistics data from COVID Symptom Study Sweden.
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -14,6 +14,5 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Depends: R (>= 2.10)
-Imports: rio, stringi, remotes, utils
-Suggests: knitr, rmarkdown
+Suggests: readr,knitr, rmarkdown, stringi, devtools
 VignetteBuilder: knitr
