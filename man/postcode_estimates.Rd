@@ -16,7 +16,7 @@ A data frame of 5 columns
 }
 }
 \source{
-COVID Symptom Study-Sweden \href{https://www.covid19app.lu.se/}{website}.
+COVID Symptom Study-Sweden.
 }
 \usage{
 postcode_estimates

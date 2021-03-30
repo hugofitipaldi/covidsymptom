@@ -14,7 +14,7 @@ A data frame of 4 columns
 }
 }
 \source{
-COVID Symptom Study-Sweden \href{https://www.covid19app.lu.se/}{website}.
+COVID Symptom Study-Sweden.
 }
 \usage{
 national_estimates

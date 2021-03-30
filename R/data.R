@@ -9,7 +9,7 @@
 #'  \item{Low_CI}{Confidence Interval Lower Bound}
 #'  \item{High_CI}{Confidence Interval Higher Bound}
 #' }
-#' @source COVID Symptom Study-Sweden \href{https://www.covid19app.lu.se/}{website}.
+#' @source COVID Symptom Study-Sweden.
 #' @keywords datasets coronavirus COVID19
 #' @details This dataset contains daily estimated prevalence of symptomatic covid-19
 #' in Sweden.
@@ -29,7 +29,7 @@
 #'  \item{Low_CI}{Confidence Interval Lower Bound}
 #'  \item{High_CI}{Confidence Interval Higher Bound}
 #' }
-#' @source COVID Symptom Study-Sweden \href{https://www.covid19app.lu.se/}{website}.
+#' @source COVID Symptom Study-Sweden.
 #' @keywords datasets coronavirus COVID19
 #' @details This dataset contains daily estimated prevalence of symptomatic covid-19
 #' in swedish counties.
@@ -50,7 +50,7 @@
 #'  \item{High_CI}{Confidence Interval Higher Bound}
 #'  \item{Ort}{Regions/cities within the postcode area }
 #' }
-#' @source COVID Symptom Study-Sweden \href{https://www.covid19app.lu.se/}{website}.
+#' @source COVID Symptom Study-Sweden.
 #' @keywords datasets coronavirus COVID19
 #' @details This dataset contains daily estimated prevalence of symptomatic covid-19
 #' in swedish 2-digit postcode regions.
