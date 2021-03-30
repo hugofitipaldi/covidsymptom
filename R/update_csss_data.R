@@ -20,7 +20,7 @@ update_csss_data <- function(silence = FALSE){
   flag <- FALSE
   cat(paste0("\033[4;", 32, "m","Checking for updates for the covidsymptom package","\033[0m","\n"))
   cat("covidsymptom dataset...")
-  national_csv <- readr::read_csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/nationella_senaste.csv")
+  national_csv <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/nationella_senaste.csv")
   national_csv$Datum <- as.Date(national_csv$Datum, format = "%Y-%m-%d")
 
   covidsymptom_current <- covidsymptom::national_estimates
