@@ -38,12 +38,14 @@ remotes::install_github("csss-resultat/covidsymptom")
 
 ## Update data
 
-Data from COVID Symptom Study - Sweden is updated on a daily basis. We
-have implemented the function `update_csss_data()` to update the
-datasets based on the
+In order to respect CRAN best use practices, we will only push a new
+version of the package with most recent data every one month. However,
+data from COVID Symptom Study - Sweden is updated on a daily basis, thus
+the dev version of the package is also updated daily. The function
+`update_csss_data()` (based on a similar function from the
 <a href = https://github.com/RamiKrispin/coronavirus> coronavirus
-package.</a> this functions updates the package to the dev version in
-GitHub.
+package),</a> checks updates to the dataset and re-install the package
+with the most recent data (dev version).
 
 ``` r
 library(covidsymptom)
@@ -52,7 +54,8 @@ update_csss_data()
 
 If you want to avoid updating the package to have the most recent data,
 you can use the function `get_latest_data()` to import the latest
-version available:
+version available. Notice however that this won’t re-write the package
+datasets.
 
 ``` r
 library(covidsymptom)
@@ -190,7 +193,7 @@ covidsymptom::postcode_estimates %>%
   theme(axis.text.x = element_text(angle = 45, hjust = 1), panel.grid.minor.x = element_blank(),
         legend.position = "none", plot.title = element_text(hjust = 0.5)) + 
   geom_ribbon(aes(ymin = Low_CI, ymax = High_CI), color = "transparent", fill = "#a60f61", alpha = 0.09) +
-  facet_wrap(. ~ Postnummer)   
+  facet_wrap(. ~ Postnummer, scales= "free")   
 ```
 
 <img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
