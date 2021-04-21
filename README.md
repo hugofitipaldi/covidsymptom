@@ -8,8 +8,6 @@
 [![](https://img.shields.io/badge/devel%20version-0.9.2-blue.svg)](https://github.com/csss-resultat/covidsymptom)
 [![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![](https://img.shields.io/github/last-commit/csss-resultat/covidsymptom.svg)](https://github.com/csss-resultat/covidsymptom/commits/master)
-[![Github all
-releases](https://img.shields.io/github/downloads/csss-resultat/covidsymptom/total.svg)](https://GitHub.com/csss-resultat/covidsymptom/releases/)
 
 <!-- badges: end -->
 

@@ -15,7 +15,6 @@ library(badger)
 `r badge_devel("csss-resultat/covidsymptom", "blue")`
 `r badge_lifecycle("experimental", "orange")`
 `r badge_last_commit("csss-resultat/covidsymptom")`
-[![Github all releases](https://img.shields.io/github/downloads/csss-resultat/covidsymptom/total.svg)](https://GitHub.com/csss-resultat/covidsymptom/releases/)
 
 <!-- badges: end -->
 
