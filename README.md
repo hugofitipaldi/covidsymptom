@@ -6,7 +6,7 @@
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/covidsymptom)](https://cran.r-project.org/package=covidsymptom)
 ![CRAN\_Badge](https://cranlogs.r-pkg.org/badges/grand-total/covidsymptom)
 [![](https://img.shields.io/badge/devel%20version-0.9.2-blue.svg)](https://github.com/csss-resultat/covidsymptom)
-[![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![](https://img.shields.io/github/last-commit/csss-resultat/covidsymptom.svg)](https://github.com/csss-resultat/covidsymptom/commits/master)
 
 <!-- badges: end -->
@@ -14,11 +14,11 @@
 The covidsymptom R package provides an easy way to import open data from
 the COVID Symptom Study-Sweden. The package includes three datasets:
 
-  - `national_estimates` - daily estimated incidence of symptomatic
+-   `national_estimates` - daily estimated incidence of symptomatic
     COVID-19 in Sweden
-  - `county_estimates` - daily estimated incidence of symptomatic
+-   `county_estimates` - daily estimated incidence of symptomatic
     COVID-19 in Swedish counties
-  - `postcode_estimates` - daily estimated incidence of symptomatic
+-   `postcode_estimates` - daily estimated incidence of symptomatic
     COVID-19 in smaller Swedish regions (2-digit postcodes)
 
 ## Installation
@@ -73,9 +73,7 @@ head(national_estimates)
 
 ## Usage
 
-  - National estimates
-
-<!-- end list -->
+-   National estimates
 
 ``` r
 library(ggplot2)
@@ -100,9 +98,7 @@ covidsymptom::national_estimates %>%
 
 <img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
 
-  - Counties’ estimates
-
-<!-- end list -->
+-   Counties’ estimates
 
 ``` r
 library(ggplot2)
@@ -127,7 +123,7 @@ covidsymptom::county_estimates %>%
 
 <img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
-  - 2-digit postcodes’ estimates
+-   2-digit postcodes’ estimates
 
 COVID Symptom Study - Sweden provides also predictions at
 <a href = "https://csss-resultat.github.io/sverige2siffror/">2-digit
@@ -179,7 +175,6 @@ filtered_data %>%
 <a><img src='man/figures/gt.png'/></a>
 
 ``` r
-
 stockholm_codes <- c('11', '12', '13', '14', '15', '16', '17', '18', '19')
 
 covidsymptom::postcode_estimates %>%
@@ -218,7 +213,7 @@ al (Science, 2020)</a>. The app was launched in the UK and US March
 2020. In Sweden, the study is based at Lund University and, as per a
 collaboration agreement on 28 July 2020, Uppsala University. The app was
 launched in Sweden on April 29, 2020 as part of a national research
-initiative on COVID-19. To date, \>4.5 million participants in the three
-countries are using the app, \~202,000 of whom live in Sweden.
+initiative on COVID-19. To date, &gt;4.5 million participants in the
+three countries are using the app, \~202,000 of whom live in Sweden.
 Participants have so far made \~271 million data entries, with Swedish
 participants contributing \~11 million of these.
