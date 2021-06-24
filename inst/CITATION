@@ -1,0 +1,16 @@
+citHeader("To cite covidsymptom in publications use:")
+
+citEntry(
+  entry    = "Article",
+  title    = "App-based COVID-19 surveillance and prediction: The COVID Symptom Study Sweden",
+  author   = "Beatrice Kennedy, Hugo Fitipaldi, Ulf Hammar, Marlena Maziarz, Neli Tsereteli, Nikolay Oskolkov, Georgios Varotsis, Camilla A Franks, Lampros Spiliopoulos, Hans-Olov Adami, Jonas Björk, Stefan Engblom, Katja Fall, Anna Grimby-Ekman, Jan-Eric Litton, Mats Martinell, Anna Oudin, Torbjörn Sjöström, Toomas Timpka, Carole H Sudre, Mark S Graham, Julien Lavigne du Cadet, Andrew T. Chan, Richard Davies, Sajaysurya Ganesh, Anna May, Sébastien Ourselin, Joan Capdevila Pujol, Somesh Selvachandran, Jonathan Wolf, Tim D Spector, Claire J Steves, Maria F Gomez, Paul W Franks, Tove Fall",
+  journal  = ,
+  year     = 2021,
+  volume   = ,
+  number   = ,
+  pages    = ,
+  url      = ,
+  textVersion = paste(
+
+  )
+)
