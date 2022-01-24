@@ -58,3 +58,21 @@
 #' data(postcode_estimates)
 "postcode_estimates"
 
+#' Daily covid-19 tests reported in the COVID Symptom Study Sweden
+#'
+#' A dataset containing daily reported number of covid-19 tests and the proportion of positive results
+#'
+#' @format A data frame of 4 columns
+#' \describe{
+#'  \item{date}{Date of report}
+#'  \item{total_tests}{Number of tests}
+#'  \item{proportion_positive}{Proportion of positive tests}
+#'  \item{test_type}{Type of test: snabbtest (antigen) or PCR}
+#' }
+#' @source COVID Symptom Study-Sweden.
+#' @keywords datasets coronavirus COVID19
+#' @details This dataset contains daily reports of covid-19 tests and the proportion of positive results
+#' in swedish 2-digit postcode regions.
+#' @examples
+#' data(csss_tests)
+"csss_tests"
