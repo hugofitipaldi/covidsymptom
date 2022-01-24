@@ -1,3 +1,8 @@
+# covidsymptom 0.9.3
+
+* Data updated up to January 2022
+* Adding new dataset (tests)
+
 # covidsymptom 0.9.2
 
 * Data updated up to March 29
