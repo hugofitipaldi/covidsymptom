@@ -12,7 +12,7 @@
 <!-- badges: end -->
 
 The covidsymptom R package provides an easy way to import open data from
-the COVID Symptom Study-Sweden. The package includes three datasets:
+the COVID Symptom Study-Sweden. The package includes four datasets:
 
 -   `national_estimates` - daily estimated incidence of symptomatic
     COVID-19 in Sweden
@@ -20,6 +20,8 @@ the COVID Symptom Study-Sweden. The package includes three datasets:
     COVID-19 in Swedish counties
 -   `postcode_estimates` - daily estimated incidence of symptomatic
     COVID-19 in smaller Swedish regions (2-digit postcodes)
+-   `csss_tests` - daily proportion of positive COVID-19 tests reported
+    by CSSS users
 
 ## Installation
 
