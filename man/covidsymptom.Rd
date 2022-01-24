@@ -28,6 +28,6 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Hugo Fitipaldi \email{hugofitipaldi@gmail.com}
+\strong{Maintainer}: Hugo Fitipaldi \email{hugo.fitipaldi@med.lu.se}
 
 }
