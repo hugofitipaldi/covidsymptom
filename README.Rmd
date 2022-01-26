@@ -87,7 +87,7 @@ covidsymptom::national_estimates %>%
                      breaks = seq(0, 1, 0.2),
                      labels = paste0(format(seq(0, 1, 0.2), decimal.mark = ","), " %"), # add % sign to the labels
                      expand = c(0,0)) +
-  scale_x_date(date_breaks = "10 days", date_labels = "%d %b") + # can be "1 day", "2 days", etc.
+  scale_x_date(date_breaks = "30 days", date_labels = "%d %b, %Y") + # can be "1 day", "2 days", etc.
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1), panel.grid.minor.x = element_blank()) +
   geom_ribbon(aes(ymin = Low_CI, ymax = High_CI), fill = "#a60f61", alpha = 0.09)
@@ -110,7 +110,7 @@ covidsymptom::county_estimates %>%
       geom_line() +
       geom_point(size = 0.5) +
       labs(x = "Datum", y = "Uppskattad förekomst", title = "% Uppskattad förekomst av symtomatisk covid-19", subtitle = "") +
-      scale_x_date(date_breaks = "30 days") +
+      scale_x_date(date_breaks = "50 days") +
       theme_minimal() + 
       theme(axis.text.x = element_text(angle = 45, hjust = 1), panel.grid.minor.x = element_blank(),
             legend.position = "none", plot.title = element_text(hjust = 0.5)) + 
@@ -181,7 +181,7 @@ covidsymptom::postcode_estimates %>%
   geom_line() +
   geom_point(size = 0.5) +
   labs(x = "Datum", y = "Uppskattad förekomst", title = "% Uppskattad förekomst av symtomatisk covid-19", subtitle = "") +
-  scale_x_date(date_breaks = "60 days") +
+  scale_x_date(date_breaks = "90 days") +
   theme_minimal() + 
   theme(axis.text.x = element_text(angle = 45, hjust = 1), panel.grid.minor.x = element_blank(),
         legend.position = "none", plot.title = element_text(hjust = 0.5)) + 
