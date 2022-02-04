@@ -195,6 +195,34 @@ covidsymptom::postcode_estimates %>%
 
 <img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
 
+-   covid-19 tests results
+
+``` r
+library(gganimate)
+tests_df <- covidsymptom::csss_tests
+
+a_plot <- ggplot(tests_df, aes(x=date, y=total_tests)) +
+  geom_line() +
+  geom_segment(aes(xend=max(date), yend = total_tests), linetype=2, colour='blue') +
+  geom_point(size = 3) + 
+  geom_text(aes(x = max(date)+.1, label = sprintf("%5.0f", total_tests)), hjust=0) +
+  transition_reveal(date) + 
+  view_follow(fixed_y = TRUE)+
+  coord_cartesian(clip = 'off') + 
+  labs(title = 'Reported antigen tests in the Covid Symptom Study Sweden', y = 'N# Antigen tests', x = "Date") +
+  enter_drift(x_mod = -1) + exit_drift(x_mod = 1) +
+  theme_bw() +
+  theme(panel.border = element_blank(),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        axis.line = element_line(colour = "black"),
+        plot.margin = margin(5.5, 40, 5.5, 5.5))
+
+animate(a_plot, fps = 5)
+```
+
+<img src="man/figures/README-unnamed-chunk-7-1.gif" width="100%" />
+
 ## Dashboard
 
 A supporting dashboard is available
