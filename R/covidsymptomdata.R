@@ -5,7 +5,7 @@ national_estimates <- utils::read.csv("https://raw.githubusercontent.com/csss-re
 county_estimates <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/lan_senaste.csv")
 postcode_estimates <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/siffror_senaste.csv")
 csss_tests <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/csss_tester.csv")
-
+symptoms <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/csss_symptom.csv")
 
 # Data cleaning
 national_estimates$Datum <- as.Date(national_estimates$Datum, format = "%Y-%m-%d")

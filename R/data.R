@@ -76,3 +76,22 @@
 #' @examples
 #' data(csss_tests)
 "csss_tests"
+
+#' Daily proportion of symptoms reported by CSSS users
+#'
+#' A dataset containing daily reported number of covid-19 tests and the proportion of positive results
+#'
+#' @format A data frame of 4 columns
+#' \describe{
+#'  \item{Datum}{Date of report}
+#'  \item{Symptom}{Symptom}
+#'  \item{Andel}{Proportion of symptom}
+#'  \item{Vikt}{Weight related to covid19: positiv or negativ}
+#' }
+#' @source COVID Symptom Study-Sweden.
+#' @keywords datasets coronavirus COVID19
+#' @details This dataset contains daily reports of covid-19 tests and the proportion of positive results
+#' in swedish 2-digit postcode regions.
+#' @examples
+#' data(csss_tests)
+"symptoms"
