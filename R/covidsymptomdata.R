@@ -18,4 +18,4 @@ csss_tests$date <- as.Date(csss_tests$date, format = "%Y-%m-%d")
 csss_tests$test_type <- "Snabbtester"
 
 # Data update
-usethis::use_data(national_estimates, county_estimates, postcode_estimates, csss_tests,  overwrite = TRUE)
+usethis::use_data(national_estimates, county_estimates, postcode_estimates, csss_tests, symptoms,  overwrite = TRUE)
