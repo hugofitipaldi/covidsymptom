@@ -16,6 +16,7 @@ county_estimates$Lan <- stringi::stri_trans_general(str = county_estimates$Lan,i
 postcode_estimates$Ort <- stringi::stri_trans_general(str = postcode_estimates$Ort,id = "Latin-ASCII")
 csss_tests$date <- as.Date(csss_tests$date, format = "%Y-%m-%d")
 csss_tests$test_type <- "Snabbtester"
+symptoms$Datum <- as.Date(symptoms$Datum, format = "%Y-%m-%d")
 
 # Data update
 usethis::use_data(national_estimates, county_estimates, postcode_estimates, csss_tests, symptoms,  overwrite = TRUE)
