@@ -12,7 +12,7 @@
 <!-- badges: end -->
 
 The covidsymptom R package provides an easy way to import open data from
-the COVID Symptom Study-Sweden. The package includes four datasets:
+the COVID Symptom Study-Sweden. The package includes five datasets:
 
 -   `national_estimates` - daily estimated incidence of symptomatic
     COVID-19 in Sweden
@@ -22,6 +22,7 @@ the COVID Symptom Study-Sweden. The package includes four datasets:
     COVID-19 in smaller Swedish regions (2-digit postcodes)
 -   `csss_tests` - daily proportion of positive COVID-19 tests reported
     by CSSS users
+-   `symptoms` - daily prevalences of symptoms reported by CSSS users
 
 ## Installation
 
@@ -113,7 +114,7 @@ covidsymptom::county_estimates %>%
   filter(Lan %in% counties_selection) %>%
   ggplot(aes(x = Datum, y = Uppskattning, color = Lan)) +
       geom_line() +
-      geom_point(size = 0.5) +
+      #geom_point(size = 0.5) +
       labs(x = "Datum", y = "Uppskattad förekomst", title = "% Uppskattad förekomst av symtomatisk covid-19", subtitle = "") +
       scale_x_date(date_breaks = "50 days") +
       theme_minimal() + 
@@ -183,7 +184,7 @@ covidsymptom::postcode_estimates %>%
   filter(Postnummer %in% stockholm_codes) %>%
   ggplot(aes(x = Datum, y = Uppskattning, color = Postnummer)) +
   geom_line() +
-  geom_point(size = 0.5) +
+  #geom_point(size = 0.5) +
   labs(x = "Datum", y = "Uppskattad förekomst", title = "% Uppskattad förekomst av symtomatisk covid-19", subtitle = "") +
   scale_x_date(date_breaks = "90 days") +
   theme_minimal() + 
@@ -220,6 +221,37 @@ animate(a_plot, fps = 5)
 ```
 
 <img src="man/figures/README-unnamed-chunk-7-1.gif" width="100%" />
+
+-   Symptoms prevalences
+
+``` r
+library(ggplot2)
+library(dplyr)
+library(ggrepel)
+
+symptoms_df <- covidsymptom::symptoms %>%
+  mutate(Vikt = factor(Vikt, levels = c("Positiv", "Negativ")))
+symptoms_df[symptoms_df$Symptom == "Förlorat eller förändrat lukt-/smaksinne",]$Symptom <- "Förlorat eller förändrat\nlukt-/smaksinne"
+data_ends <- symptoms_df %>% 
+  filter(Datum == max(Datum)) 
+
+symptoms_df %>%
+  ggplot(aes(x = Datum, y = Andel, color = Symptom)) +
+  geom_line() +
+  theme_light(base_size = 11) +
+  labs(x = "Datum", y = "Andel deltagare med symptom", title = "Covid19 symptom", subtitle = "", color = "") +
+  scale_x_date(date_breaks = "60 days", date_labels = "%d %b, %Y", limits = as.Date(c("2020-04-015","2022-07-01"))) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1), panel.grid.minor.x = element_blank(),
+        plot.title = element_text(hjust = 0.5, face="bold"), legend.position = "none",
+        strip.text = element_text(face="bold")) + 
+ geom_label_repel(
+   aes(label = Symptom, fill = Symptom), data = data_ends,
+   fontface ="plain", color = "black", size = 3,
+   xlim = as.Date(c("2022-03-20", "2022-07-01"))) +
+  facet_wrap(~Vikt, scales = "free_y", ncol =1) 
+```
+
+<a><img src='man/figures/symptoms.png'/></a>
 
 ## Dashboard
 
