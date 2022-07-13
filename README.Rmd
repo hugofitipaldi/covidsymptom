@@ -36,6 +36,9 @@ The covidsymptom R package provides an easy way to import open data from the COV
 - `csss_tests` - daily proportion of positive COVID-19 tests reported by CSSS users
 - `symptoms` - daily prevalences of symptoms reported by CSSS users
 
+## End of data collection
+
+On 11 July 2022, we have completed the data collection phase of CSSS. We would like to thank our participants for their contribution to the research and our study since the start of the covid-19 pandemic. Without their data, it would not have been possible for us to follow the spread of infection in Sweden. We will continue to publish our results in scientific articles and at scientific meetings and we will share these results on the study's website as soon as they have been reviewed and published. You can read more about the end of data collection <a href = https://www.covid19app.lu.se/artikel/vi-avslutar-var-datainsamling-0> here</a> (Swedish). We are, therefore, working on the final version of this package for CRAN.
 
 ## Installation
 
@@ -50,9 +53,10 @@ Development version of the package can be installed from Github with:
 install.packages("remotes")
 remotes::install_github("csss-resultat/covidsymptom")
 ```
+
 ## Update data
 
-In order to respect CRAN best use practices, we will only push a new version of the package with most recent data every one month. However, data from COVID Symptom Study - Sweden is updated on a daily basis, thus the dev version of the package is also updated daily. The function ```update_csss_data()``` (based on a similar function from the <a href = https://github.com/RamiKrispin/coronavirus> coronavirus package),</a> checks updates to the dataset and re-install the package with the most recent data (dev version). 
+In order to respect CRAN best use practices, we will only push a new version of the package with most recent data every one month. However, data from COVID Symptom Study - Sweden is updated on a daily basis (see end of data collection), thus the dev version of the package is also updated daily. The function ```update_csss_data()``` (based on a similar function from the <a href = https://github.com/RamiKrispin/coronavirus> coronavirus package),</a> checks updates to the dataset and re-install the package with the most recent data (dev version). 
 
 ``` r
 library(covidsymptom)
@@ -84,7 +88,7 @@ covidsymptom::national_estimates %>%
   labs(x = "Date", y = "Predicted number of cases as % of the population",
        title = "Predicted Number of COVID-19 Cases by Date",
        subtitle = "")  +
-  scale_y_continuous(limits = c(0, 1),
+  scale_y_continuous(limits = c(0, 1.3),
                      breaks = seq(0, 1, 0.2),
                      labels = paste0(format(seq(0, 1, 0.2), decimal.mark = ","), " %"), # add % sign to the labels
                      expand = c(0,0)) +

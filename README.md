@@ -3,7 +3,7 @@
 
 <!-- badges: start --->
 
-[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/covidsymptom)](https://cran.r-project.org/package=covidsymptom)
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/covidsymptom)](https://cran.r-project.org/package=covidsymptom)
 ![CRAN\_Badge](https://cranlogs.r-pkg.org/badges/grand-total/covidsymptom)
 [![](https://img.shields.io/badge/devel%20version-0.9.3-blue.svg)](https://github.com/csss-resultat/covidsymptom)
 [![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
@@ -24,6 +24,20 @@ the COVID Symptom Study-Sweden. The package includes five datasets:
     by CSSS users
 -   `symptoms` - daily prevalences of symptoms reported by CSSS users
 
+## End of data collection
+
+On 11 July 2022, we have completed the data collection phase of CSSS. We
+would like to thank our participants for their contribution to the
+research and our study since the start of the covid-19 pandemic. Without
+their data, it would not have been possible for us to follow the spread
+of infection in Sweden. We will continue to publish our results in
+scientific articles and at scientific meetings and we will share these
+results on the study’s website as soon as they have been reviewed and
+published. You can read more about the end of data collection
+<a href = https://www.covid19app.lu.se/artikel/vi-avslutar-var-datainsamling-0>
+here</a> (Swedish). We are, therefore, working on the final version of
+this package for CRAN.
+
 ## Installation
 
 Install the CRAN version:
@@ -43,12 +57,12 @@ remotes::install_github("csss-resultat/covidsymptom")
 
 In order to respect CRAN best use practices, we will only push a new
 version of the package with most recent data every one month. However,
-data from COVID Symptom Study - Sweden is updated on a daily basis, thus
-the dev version of the package is also updated daily. The function
-`update_csss_data()` (based on a similar function from the
-<a href = https://github.com/RamiKrispin/coronavirus> coronavirus
-package),</a> checks updates to the dataset and re-install the package
-with the most recent data (dev version).
+data from COVID Symptom Study - Sweden is updated on a daily basis (see
+end of data collection), thus the dev version of the package is also
+updated daily. The function `update_csss_data()` (based on a similar
+function from the <a href = https://github.com/RamiKrispin/coronavirus>
+coronavirus package),</a> checks updates to the dataset and re-install
+the package with the most recent data (dev version).
 
 ``` r
 library(covidsymptom)
@@ -89,7 +103,7 @@ covidsymptom::national_estimates %>%
   labs(x = "Date", y = "Predicted number of cases as % of the population",
        title = "Predicted Number of COVID-19 Cases by Date",
        subtitle = "")  +
-  scale_y_continuous(limits = c(0, 1),
+  scale_y_continuous(limits = c(0, 1.3),
                      breaks = seq(0, 1, 0.2),
                      labels = paste0(format(seq(0, 1, 0.2), decimal.mark = ","), " %"), # add % sign to the labels
                      expand = c(0,0)) +
@@ -273,7 +287,7 @@ al (Science, 2020)</a>. The app was launched in the UK and US March
 2020. In Sweden, the study is based at Lund University and, as per a
 collaboration agreement on 28 July 2020, Uppsala University. The app was
 launched in Sweden on April 29, 2020 as part of a national research
-initiative on COVID-19. To date, &gt;4.5 million participants in the
-three countries are using the app, \~202,000 of whom live in Sweden.
+initiative on COVID-19. To date, \>4.5 million participants in the three
+countries are using the app, \~202,000 of whom live in Sweden.
 Participants have so far made \~271 million data entries, with Swedish
 participants contributing \~11 million of these.
