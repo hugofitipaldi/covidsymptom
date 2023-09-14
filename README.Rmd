@@ -2,7 +2,7 @@
 output: github_document
 ---
 
-# covidsymptom <a href='https://github.com/csss-resultat/covidsymptom'><img src='man/figures/hex3.png' width="15%" align="right"  /></a>
+# covidsymptom R Package <a href='https://github.com/csss-resultat/covidsymptom'><img src='man/figures/hex3.png' width="15%" align="right"  /></a>
 
 ```{r echo = FALSE}
 library(badger)
@@ -27,7 +27,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-
 The covidsymptom R package provides an easy way to import open data from the COVID Symptom Study-Sweden. The package includes five datasets:
 
 - `national_estimates` - daily estimated incidence of symptomatic COVID-19 in Sweden
@@ -39,6 +38,19 @@ The covidsymptom R package provides an easy way to import open data from the COV
 ## End of data collection
 
 On 11 July 2022, we have completed the data collection phase of CSSS. We would like to thank our participants for their contribution to the research and our study since the start of the covid-19 pandemic. Without their data, it would not have been possible for us to follow the spread of infection in Sweden. We will continue to publish our results in scientific articles and at scientific meetings and we will share these results on the study's website as soon as they have been reviewed and published. You can read more about the end of data collection <a href = https://www.covid19app.lu.se/artikel/vi-avslutar-var-datainsamling-0> here</a> (Swedish). We are, therefore, working on the final version of this package for CRAN.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Update Data](#update-data)
+- [Usage](#usage)
+  - [National Estimates](#national-estimates)
+  - [Counties' Estimates](#counties-estimates)
+  - [2-Digit Postcodes' Estimates](#2-digit-postcodes-estimates)
+  - [COVID-19 Tests Results](#covid-19-tests-results)
+  - [Symptoms Prevalences](#symptoms-prevalences)
+- [Dashboard](#dashboard)
+- [About COVID Symptom Study - Sweden](#about-covid-symptom-study-sweden)
 
 ## Installation
 

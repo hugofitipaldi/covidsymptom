@@ -1,5 +1,5 @@
 
-# covidsymptom <a href='https://github.com/csss-resultat/covidsymptom'><img src='man/figures/hex3.png' width="15%" align="right"  /></a>
+# covidsymptom R Package <a href='https://github.com/csss-resultat/covidsymptom'><img src='man/figures/hex3.png' width="15%" align="right"  /></a>
 
 <!-- badges: start --->
 
@@ -14,15 +14,15 @@
 The covidsymptom R package provides an easy way to import open data from
 the COVID Symptom Study-Sweden. The package includes five datasets:
 
--   `national_estimates` - daily estimated incidence of symptomatic
-    COVID-19 in Sweden
--   `county_estimates` - daily estimated incidence of symptomatic
-    COVID-19 in Swedish counties
--   `postcode_estimates` - daily estimated incidence of symptomatic
-    COVID-19 in smaller Swedish regions (2-digit postcodes)
--   `csss_tests` - daily proportion of positive COVID-19 tests reported
-    by CSSS users
--   `symptoms` - daily prevalences of symptoms reported by CSSS users
+- `national_estimates` - daily estimated incidence of symptomatic
+  COVID-19 in Sweden
+- `county_estimates` - daily estimated incidence of symptomatic COVID-19
+  in Swedish counties
+- `postcode_estimates` - daily estimated incidence of symptomatic
+  COVID-19 in smaller Swedish regions (2-digit postcodes)
+- `csss_tests` - daily proportion of positive COVID-19 tests reported by
+  CSSS users
+- `symptoms` - daily prevalences of symptoms reported by CSSS users
 
 ## End of data collection
 
@@ -37,6 +37,20 @@ published. You can read more about the end of data collection
 <a href = https://www.covid19app.lu.se/artikel/vi-avslutar-var-datainsamling-0>
 here</a> (Swedish). We are, therefore, working on the final version of
 this package for CRAN.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Update Data](#update-data)
+- [Usage](#usage)
+  - [National Estimates](#national-estimates)
+  - [Counties’ Estimates](#counties-estimates)
+  - [2-Digit Postcodes’ Estimates](#2-digit-postcodes-estimates)
+  - [COVID-19 Tests Results](#covid-19-tests-results)
+  - [Symptoms Prevalences](#symptoms-prevalences)
+- [Dashboard](#dashboard)
+- [About COVID Symptom Study -
+  Sweden](#about-covid-symptom-study-sweden)
 
 ## Installation
 
@@ -90,7 +104,7 @@ head(national_estimates)
 
 ## Usage
 
--   National estimates
+- National estimates
 
 ``` r
 library(ggplot2)
@@ -115,7 +129,7 @@ covidsymptom::national_estimates %>%
 
 <img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
 
--   Counties’ estimates
+- Counties’ estimates
 
 ``` r
 library(ggplot2)
@@ -140,7 +154,7 @@ covidsymptom::county_estimates %>%
 
 <img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
--   2-digit postcodes’ estimates
+- 2-digit postcodes’ estimates
 
 COVID Symptom Study - Sweden provides also predictions at
 <a href = "https://csss-resultat.github.io/sverige2siffror/">2-digit
@@ -192,6 +206,7 @@ filtered_data %>%
 <a><img src='man/figures/gt.png'/></a>
 
 ``` r
+
 stockholm_codes <- c('11', '12', '13', '14', '15', '16', '17', '18', '19')
 
 covidsymptom::postcode_estimates %>%
@@ -210,7 +225,7 @@ covidsymptom::postcode_estimates %>%
 
 <img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
 
--   covid-19 tests results
+- covid-19 tests results
 
 ``` r
 library(gganimate)
@@ -236,7 +251,7 @@ animate(a_plot, fps = 5)
 
 <img src="man/figures/README-unnamed-chunk-7-1.gif" width="100%" />
 
--   Symptoms prevalences
+- Symptoms prevalences
 
 ``` r
 library(ggplot2)
@@ -276,7 +291,7 @@ A supporting dashboard is available
 
 ## About COVID Symptom Study - Sweden
 
-The COVID Symptom Study is a non-commercial project that uses a free
+The COVID Symptom Study was a non-commercial project that used a free
 smartphone app to facilitate real-time data collection of symptoms,
 exposures, and risk factors related to COVID-19. The app was developed
 by researchers at King’s College and Guys and St Thomas’ Hospitals in
@@ -285,9 +300,12 @@ Ltd. Baseline data and recurring daily questions are described in
 <a href = https://science.sciencemag.org/content/368/6497/1362> Drew et
 al (Science, 2020)</a>. The app was launched in the UK and US March
 2020. In Sweden, the study is based at Lund University and, as per a
-collaboration agreement on 28 July 2020, Uppsala University. The app was
-launched in Sweden on April 29, 2020 as part of a national research
-initiative on COVID-19. To date, \>4.5 million participants in the three
-countries are using the app, \~202,000 of whom live in Sweden.
-Participants have so far made \~271 million data entries, with Swedish
-participants contributing \~11 million of these.
+collaboration agreement on 28 July 2020, Uppsala University. More about
+the Swedish part of the study is described in
+<a href = https://www.nature.com/articles/s41467-022-29608-7> Kennedy &
+Fitipaldi, et al. (Nat Comms, 2022)</a> The app was launched in Sweden
+on April 29, 2020 as part of a national research initiative on COVID-19.
+\>4.5 million participants in the three countries used the app, ~220,000
+of whom live in Sweden. On July 11, 2022, with over 500 million data
+entries, in which Swedish participants contributed ~20 million of these,
+the project officially ended the data collection phase.
