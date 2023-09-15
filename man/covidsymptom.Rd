@@ -23,11 +23,11 @@ contributing ~11 million of these.
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/csss-resultat/covidsymptom}
+  \item \url{https://github.com/hugofitipaldi/covidsymptom}
 }
 
 }
 \author{
-\strong{Maintainer}: Hugo Fitipaldi \email{hugo.fitipaldi@med.lu.se}
+\strong{Maintainer}: Hugo Fitipaldi \email{hugofitipaldi@gmail.com}
 
 }
