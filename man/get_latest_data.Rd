@@ -17,6 +17,8 @@ Downloads latest version of CSSS data.
 }
 \details{
 This function was designed to download the latest data from COVID Symptom Study Sweden without the need to update the package on a regular basis.
+This function has been disabled and will no longer download data, as the COVID Symptom Study Sweden
+is no longer updating their data sets. Please refrain from using this function.
 }
 \examples{
 df <- get_latest_data(data_level = "county")

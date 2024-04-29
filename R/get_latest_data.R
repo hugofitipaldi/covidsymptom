@@ -3,6 +3,8 @@
 #' Downloads latest version of CSSS data.
 #'
 #' This function was designed to download the latest data from COVID Symptom Study Sweden without the need to update the package on a regular basis.
+#' This function has been disabled and will no longer download data, as the COVID Symptom Study Sweden
+#' is no longer updating their data sets. Please refrain from using this function.
 #'
 #' @param data_level selects which data set from CSSS you want to download: "national" (default), "county" or "postcode"
 #'
@@ -15,25 +17,28 @@
 #' @examples
 #' df <- get_latest_data(data_level = "county")
 #'
+# get_latest_data <- function(data_level = c("national", "county", "postcode")) {
+#   data_level  <- match.arg(data_level)
+#   if (data_level == "national") {
+#     level_national <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/nationella_senaste.csv")
+#     level_national$Datum <- as.Date(level_national$Datum, format = "%Y-%m-%d")
+#     return(level_national)
+#
+#   } else if (data_level == "county") {
+#     level_county <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/lan_senaste.csv")
+#     level_county$Datum <- as.Date(level_county$Datum, format = "%Y-%m-%d")
+#     level_county$Lan <- stringi::stri_trans_general(str = level_county$Lan,id = "Latin-ASCII")
+#     return(level_county)
+#
+#   } else if (data_level == "postcode") {
+#     level_postcode <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/siffror_senaste.csv")
+#     level_postcode$Datum <- as.Date(level_postcode$Datum, format = "%Y-%m-%d")
+#     level_postcode$Ort <- stringi::stri_trans_general(str = level_postcode$Ort,id = "Latin-ASCII")
+#     return(level_postcode)
+#   }
+#
+# }
+
 get_latest_data <- function(data_level = c("national", "county", "postcode")) {
-
-  data_level  <- match.arg(data_level)
-  if (data_level == "national") {
-    level_national <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/nationella_senaste.csv")
-    level_national$Datum <- as.Date(level_national$Datum, format = "%Y-%m-%d")
-    return(level_national)
-
-  } else if (data_level == "county") {
-    level_county <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/lan_senaste.csv")
-    level_county$Datum <- as.Date(level_county$Datum, format = "%Y-%m-%d")
-    level_county$Lan <- stringi::stri_trans_general(str = level_county$Lan,id = "Latin-ASCII")
-    return(level_county)
-
-  } else if (data_level == "postcode") {
-    level_postcode <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/siffror_senaste.csv")
-    level_postcode$Datum <- as.Date(level_postcode$Datum, format = "%Y-%m-%d")
-    level_postcode$Ort <- stringi::stri_trans_general(str = level_postcode$Ort,id = "Latin-ASCII")
-    return(level_postcode)
-  }
-
+  stop("This function has been disabled. The COVID Symptom Study Sweden data is no longer being updated.")
 }

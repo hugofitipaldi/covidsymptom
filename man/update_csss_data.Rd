@@ -14,13 +14,15 @@ Updated data.frames
 }
 \description{
 Update the package datasets on the global environment with the most recent data on the dev version
-}
-\details{
+
 This function enables to refresh the package dataset to the most up-to-date data by re-installing the dev version of the package.
 Changes will be available on the global environment
+
+This function was intended to update the package datasets with the most recent data.
+It has been disabled as the dataset is no longer updated.
 }
 \examples{
-update_csss_data()
+update_csss_data() # This will now produce an error.
 
 }
 \author{
