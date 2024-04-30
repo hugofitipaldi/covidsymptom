@@ -24,7 +24,6 @@ get_latest_data <- function(data_level = c("national", "county", "postcode")) {
     level_national <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/nationella_senaste.csv")
     level_national$Datum <- as.Date(level_national$Datum, format = "%Y-%m-%d")
 
-    # Corrected the missing parentheses in the if condition
     if (max(level_national$Datum) == max(covidsymptom::national_estimates$Datum)) {
       return("Your data is up-to-date")
     } else {
