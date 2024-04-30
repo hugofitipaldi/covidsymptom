@@ -7,22 +7,21 @@
 get_latest_data(data_level = c("national", "county", "postcode"))
 }
 \arguments{
-\item{data_level}{selects which data set from CSSS you want to download: "national" (default), "county" or "postcode"}
+\item{data_level}{A character string specifying which data set from CSSS you want to "download". Can be "national" (default), "county", or "postcode".}
 }
 \value{
-This function returns the selected \code{data.frame}
+This function returns a \code{data.frame} containing the data for the specified level. Data returned is the last available snapshot stored within the package.
 }
 \description{
-Downloads latest version of CSSS data.
+This function was originally designed to download the latest version of CSSS data dynamically. Due to the cessation of data updates from the COVID Symptom Study Sweden, this function now checks if locally stored data is up-to-date and notifies the user accordingly. The function will not fetch new data from online sources.
 }
 \details{
-This function was designed to download the latest data from COVID Symptom Study Sweden without the need to update the package on a regular basis.
-This function has been disabled and will no longer download data, as the COVID Symptom Study Sweden
-is no longer updating their data sets. Please refrain from using this function.
+Note: As the COVID Symptom Study Sweden is no longer updating their data sets, this function serves as a demonstration of how data updates could be managed without needing frequent package updates. It returns the data that was last available before updates were discontinued.
 }
 \examples{
+# The following example demonstrates how to retrieve data at the county level.
+# Since the online data source is no longer available, the returned data will be the last snapshot provided by the package.
 df <- get_latest_data(data_level = "county")
-
 }
 \author{
 Hugo Fitipaldi

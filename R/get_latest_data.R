@@ -18,36 +18,39 @@
 #' df <- get_latest_data(data_level = "county")
 
 get_latest_data <- function(data_level = c("national", "county", "postcode")) {
-  # Define data levels
   data_level  <- match.arg(data_level)
 
-  # Simulate a check to see if the data is still the latest
-  # For demonstration purposes, we assume the data is always up-to-date.
-  data_is_up_to_date <- TRUE
-
-  if (!data_is_up_to_date) {
-    # This block is just for the sake of example. It won't actually execute.
-    # Here you would normally handle the logic to update data if it was out of date.
-    print("Updating data...")
-  } else {
-    print("Your data is up-to-date.")
-  }
-
-  # You could still show what the function would return by using locally stored versions of your final dataset.
-  # For example, load a local CSV file or an R data object stored within the package.
   if (data_level == "national") {
-    level_national <- read.csv(system.file("extdata", "nationella_senaste.csv", package = "YourPackageName"))
+    level_national <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/nationella_senaste.csv")
     level_national$Datum <- as.Date(level_national$Datum, format = "%Y-%m-%d")
-    return(level_national)
+
+    # Corrected the missing parentheses in the if condition
+    if (max(level_national$Datum) == max(covidsymptom::national_estimates$Datum)) {
+      return("Your data is up-to-date")
+    } else {
+      return(level_national)
+    }
+
   } else if (data_level == "county") {
-    level_county <- read.csv(system.file("extdata", "lan_senaste.csv", package = "YourPackageName"))
+    level_county <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/lan_senaste.csv")
     level_county$Datum <- as.Date(level_county$Datum, format = "%Y-%m-%d")
     level_county$Lan <- stringi::stri_trans_general(str = level_county$Lan, id = "Latin-ASCII")
-    return(level_county)
+
+    if (max(level_county$Datum) == max(covidsymptom::county_estimates$Datum)) {
+      return("Your data is up-to-date")
+    } else {
+      return(level_county)
+    }
+
   } else if (data_level == "postcode") {
-    level_postcode <- read.csv(system.file("extdata", "siffror_senaste.csv", package = "YourPackageName"))
+    level_postcode <- utils::read.csv("https://raw.githubusercontent.com/csss-resultat/openData/main/datasets/siffror_senaste.csv")
     level_postcode$Datum <- as.Date(level_postcode$Datum, format = "%Y-%m-%d")
     level_postcode$Ort <- stringi::stri_trans_general(str = level_postcode$Ort, id = "Latin-ASCII")
-    return(level_postcode)
+
+    if (max(level_postdate$Datum) == max(covidsymptom::postcode_estimates$Datum)) {
+      return("Your data is up-to-date")
+    } else {
+      return(level_postcode)
+    }
   }
 }

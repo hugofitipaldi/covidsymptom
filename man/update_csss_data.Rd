@@ -7,23 +7,20 @@
 update_csss_data(silence = FALSE)
 }
 \arguments{
-\item{silence}{logical function to supress messages}
+\item{silence}{A logical parameter (default FALSE) to suppress messages. Setting this parameter will not affect the functionality now as the function does not perform any operations.}
 }
 \value{
-Updated data.frames
+None. This function now simply prints a message to the console indicating that the function has been disabled and no updates are available.
 }
 \description{
-Update the package datasets on the global environment with the most recent data on the dev version
+Originally, this function would update the package datasets in the global environment with the most recent data from the development version of the package. However, as updates to the CSSS dataset have been discontinued, this function now simply notifies that no updates are available.
 
-This function enables to refresh the package dataset to the most up-to-date data by re-installing the dev version of the package.
-Changes will be available on the global environment
+This function served to ensure that the package datasets remained up-to-date without requiring a full package reinstallation. It would compare the local version of the data with the latest online version and offer to update if newer data were found.
 
-This function was intended to update the package datasets with the most recent data.
-It has been disabled as the dataset is no longer updated.
+Due to the discontinuation of data updates from CSSS, this function now only serves to inform users that no new updates will be provided, preserving its structure for educational or demonstration purposes.
 }
 \examples{
-update_csss_data() # This will now produce an error.
-
+update_csss_data() # This will print a message that no updates are available.
 }
 \author{
 Hugo Fitipaldi
