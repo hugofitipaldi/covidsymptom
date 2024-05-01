@@ -2,8 +2,8 @@
 % Please edit documentation in R/covidsymptom.R
 \docType{package}
 \name{covidsymptom}
-\alias{covidsymptom}
 \alias{covidsymptom-package}
+\alias{covidsymptom}
 \title{covidsymptom: COVID Symptom Study-Sweden data}
 \description{
 Easily imports COVID Symptom Study-Sweden open data
