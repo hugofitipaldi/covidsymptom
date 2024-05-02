@@ -6,8 +6,8 @@
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/covidsymptom)](https://cran.r-project.org/package=covidsymptom)
 ![CRAN\_Badge](https://cranlogs.r-pkg.org/badges/grand-total/covidsymptom)
 [![](https://img.shields.io/badge/devel%20version-1.0.0-blue.svg)](https://github.com/csss-resultat/covidsymptom)
-[![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![](https://img.shields.io/github/last-commit/csss-resultat/covidsymptom.svg)](https://github.com/csss-resultat/covidsymptom/commits/master)
+[![](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![](https://img.shields.io/github/last-commit/hugofitipaldi/covidsymptom.svg)](https://github.com/hugofitipaldi/covidsymptom/commits/master)
 
 <!-- badges: end -->
 
