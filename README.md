@@ -5,7 +5,7 @@
 
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/covidsymptom)](https://cran.r-project.org/package=covidsymptom)
 ![CRAN\_Badge](https://cranlogs.r-pkg.org/badges/grand-total/covidsymptom)
-[![](https://img.shields.io/badge/devel%20version-0.9.3-blue.svg)](https://github.com/csss-resultat/covidsymptom)
+[![](https://img.shields.io/badge/devel%20version-1.0.0-blue.svg)](https://github.com/csss-resultat/covidsymptom)
 [![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![](https://img.shields.io/github/last-commit/csss-resultat/covidsymptom.svg)](https://github.com/csss-resultat/covidsymptom/commits/master)
 
@@ -93,13 +93,7 @@ library(covidsymptom)
 national_estimates <- get_latest_data(data_level = "national")
 
 head(national_estimates)
-#>        Datum Uppskattning Low_CI High_CI
-#> 1 2020-05-11         0.66   0.60    0.74
-#> 2 2020-05-12         0.69   0.63    0.77
-#> 3 2020-05-13         0.71   0.65    0.79
-#> 4 2020-05-14         0.72   0.65    0.79
-#> 5 2020-05-15         0.71   0.65    0.78
-#> 6 2020-05-16         0.70   0.64    0.77
+#> [1] "Your data is up-to-date"
 ```
 
 ## Usage
@@ -157,7 +151,7 @@ covidsymptom::county_estimates %>%
 - 2-digit postcodes’ estimates
 
 COVID Symptom Study - Sweden provides also predictions at
-<a href = "https://csss-resultat.github.io/sverige2siffror/">2-digit
+<a href = "https://sv.wikipedia.org/wiki/Postnummer_i_Sverige">2-digit
 postcode levels</a>.
 
 ``` r
@@ -297,7 +291,7 @@ exposures, and risk factors related to COVID-19. The app was developed
 by researchers at King’s College and Guys and St Thomas’ Hospitals in
 London in partnership with health science company Zoe Global
 Ltd. Baseline data and recurring daily questions are described in
-<a href = https://science.sciencemag.org/content/368/6497/1362> Drew et
+<a href = https://www.science.org/doi/10.1126/science.abc0473> Drew et
 al (Science, 2020)</a>. The app was launched in the UK and US March
 2020. In Sweden, the study is based at Lund University and, as per a
 collaboration agreement on 28 July 2020, Uppsala University. More about

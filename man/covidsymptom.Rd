@@ -24,6 +24,7 @@ contributing ~11 million of these.
 Useful links:
 \itemize{
   \item \url{https://github.com/hugofitipaldi/covidsymptom}
+  \item Report bugs at \url{https://github.com/hugofitipaldi/covidsymptom/issues}
 }
 
 }

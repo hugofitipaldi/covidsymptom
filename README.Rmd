@@ -138,7 +138,7 @@ covidsymptom::county_estimates %>%
 
 - 2-digit postcodes' estimates
 
-COVID Symptom Study - Sweden provides also predictions at <a href = "https://csss-resultat.github.io/sverige2siffror/">2-digit postcode levels</a>. 
+COVID Symptom Study - Sweden provides also predictions at <a href = "https://sv.wikipedia.org/wiki/Postnummer_i_Sverige">2-digit postcode levels</a>. 
 
 
 ```{r eval=FALSE}
@@ -276,7 +276,7 @@ app to facilitate real-time data collection of symptoms, exposures, and risk fac
 related to COVID-19. The app was developed by researchers at King’s College and
 Guys and St Thomas’ Hospitals in London in partnership with health science
 company Zoe Global Ltd. Baseline data and recurring daily questions are described in
-<a href = https://science.sciencemag.org/content/368/6497/1362> Drew et al (Science, 2020)</a>. The app was launched in the UK and US March 2020. In
+<a href = https://www.science.org/doi/10.1126/science.abc0473> Drew et al (Science, 2020)</a>. The app was launched in the UK and US March 2020. In
 Sweden, the study is based at Lund University and, as per a collaboration
 agreement on 28 July 2020, Uppsala University. More about the Swedish part of the study is described in <a href = https://www.nature.com/articles/s41467-022-29608-7> Kennedy & Fitipaldi, et al. (Nat Comms, 2022)</a> The app was launched in Sweden on April 29, 2020
 as part of a national research initiative on COVID-19. >4.5 million

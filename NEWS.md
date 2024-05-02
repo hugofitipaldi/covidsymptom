@@ -1,4 +1,4 @@
-# covidsymptom 0.9.4
+# covidsymptom 1.0.0
 * Data updated up to July 2022
 * Adding new dataset (symptoms)
 
