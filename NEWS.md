@@ -1,3 +1,7 @@
+# covidsymptom 0.9.4
+* Data updated up to July 2022
+* Adding new dataset (symptoms)
+
 # covidsymptom 0.9.3
 
 * Data updated up to January 2022
@@ -8,7 +12,6 @@
 * Data updated up to March 29
 * Fixed dependencies.
 * Fixed errors for solaris.
-
 
 # covidsymptom 0.9.1
 
