@@ -1,6 +1,6 @@
 Package: covidsymptom
 Title: COVID Symptom Study Sweden Open Dataset
-Version: 0.9.4
+Version: 1.0.0
 Authors@R: 
     person("Hugo", "Fitipaldi", , "hugofitipaldi@gmail.com", role = c("aut", "cre"))
 Description: The COVID Symptom Study is a non-commercial project that uses
@@ -27,3 +27,4 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
+BugReports: https://github.com/hugofitipaldi/covidsymptom/issues
