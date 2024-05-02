@@ -1,5 +1,6 @@
 ## Resubmission
 This is a re-submission. In this version I have:
+* fixed the notes
 * Added a new dataset to the package.
 * Updated data to the last data point.
 * Change functions.
@@ -11,6 +12,6 @@ This is a re-submission. In this version I have:
 
 ## R CMD check results
 
-0 errors | 0 warnings | 4 notes
+0 errors | 0 warnings | 0 notes
 
 * This is a new release.
