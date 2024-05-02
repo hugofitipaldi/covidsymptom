@@ -1,6 +1,7 @@
 ## Resubmission
 This is a re-submission. In this version I have:
-* fixed the notes
+* fixed error related to usethis package.
+* fixed the notes.
 * Added a new dataset to the package.
 * Updated data to the last data point.
 * Change functions.
