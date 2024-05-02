@@ -1,7 +1,6 @@
 ---
 output: github_document
 ---
-
 # covidsymptom R Package <a href='https://github.com/csss-resultat/covidsymptom'><img src='man/figures/hex3.png' width="15%" align="right"  /></a>
 
 ```{r echo = FALSE}
