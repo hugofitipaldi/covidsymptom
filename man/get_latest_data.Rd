@@ -20,7 +20,6 @@ Note: As the COVID Symptom Study Sweden is no longer updating their data sets, t
 }
 \examples{
 # The following example demonstrates how to retrieve data at the county level.
-# Since the online data source is no longer available, the returned data will be the last snapshot provided by the package.
 df <- get_latest_data(data_level = "county")
 }
 \author{

@@ -14,7 +14,6 @@
 #'
 #' @examples
 #' # The following example demonstrates how to retrieve data at the county level.
-#' # Since the online data source is no longer available, the returned data will be the last snapshot provided by the package.
 #' df <- get_latest_data(data_level = "county")
 
 get_latest_data <- function(data_level = c("national", "county", "postcode")) {
@@ -46,7 +45,7 @@ get_latest_data <- function(data_level = c("national", "county", "postcode")) {
     level_postcode$Datum <- as.Date(level_postcode$Datum, format = "%Y-%m-%d")
     level_postcode$Ort <- stringi::stri_trans_general(str = level_postcode$Ort, id = "Latin-ASCII")
 
-    if (max(level_postdate$Datum) == max(covidsymptom::postcode_estimates$Datum)) {
+    if (max(level_postcode$Datum) == max(covidsymptom::postcode_estimates$Datum)) {
       return("Your data is up-to-date")
     } else {
       return(level_postcode)
