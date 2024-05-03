@@ -72,11 +72,18 @@ remotes::install_github("csss-resultat/covidsymptom")
 In order to respect CRAN best use practices, we will only push a new
 version of the package with most recent data every one month. However,
 data from COVID Symptom Study - Sweden is updated on a daily basis (see
-end of data collection), thus the dev version of the package is also
-updated daily. The function `update_csss_data()` (based on a similar
-function from the <a href = https://github.com/RamiKrispin/coronavirus>
-coronavirus package),</a> checks updates to the dataset and re-install
-the package with the most recent data (dev version).
+below), thus the dev version of the package is also updated daily. The
+function `update_csss_data()` (based on a similar function from the
+<a href = https://github.com/RamiKrispin/coronavirus> coronavirus
+package),</a> checks updates to the dataset and re-install the package
+with the most recent data (dev version).
+
+<b> !!! As of May 2024, we have sent the final update of the
+covidsymptom package, and there will be no further data updates. In
+order to ensure compliance with CRAN best practices, we will no longer
+push new versions of the package with updated data. However, historical
+data remains available within the package for continued analysis and
+reference. !!!</b>
 
 ``` r
 library(covidsymptom)
